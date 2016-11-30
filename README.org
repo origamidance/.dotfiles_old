@@ -1,0 +1,46 @@
+# .dotfiles
+dotfiles
+
+list of applications:
+
+* Shell
+- zsh
+- mackup
+- prezto
+- tdrop
+- xcape
+- rofi
+- compton
+- fcitx
+- fcitx-sogouinput
+
+* xfce plugin
+- cpu graph
+- sensor
+- system load
+
+
+* Cpp
+- cmake
+- ninja
+- ccache
+
+* emacs
+- emacs
+- silver-searcher
+- ggtags
+- wakatime
+- global
+- ycmd
+- ycm_generator
+- sublime-text-dev
+
+* Apps
+- wmail
+- zathura
+
+
+
+
+
+
