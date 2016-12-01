@@ -14,6 +14,7 @@
 /home/origamidance/dependencies/Lemon|3.68573|1480361982
 /home/ran/dependencies|1.10302|1466015079
 /home/ran/Forked-repos/ofLiveApp|2.17952|1466458310
+/home/origamidance/.dotfiles/backup_work/.spacemacs.d/local|2.5|1480587100
 /home/origamidance/Research/ofxGeoFramework/bin|3.28937|1473344635
 /home/origamidance/Playground/Cinder/samples/_opengl|2.79532|1478703864
 /home/origamidance/.ssh|1.86047|1471009187
@@ -98,7 +99,7 @@
 /home/origamidance/dependencies/nativefiledialog/src|3.9055|1480442749
 /home/origamidance/Research/mech_trans/build|3.83936|1477341208
 /opt/openFrameworks/libs/poco/lib|1.10302|1468949597
-/home/origamidance/.spacemacs.d|5.425|1478629234
+/home/origamidance/.spacemacs.d|7.19138|1480587530
 /home/origamidance/Playground/CinderGP/build/libCinder-LibIgl.a|3.13979|1480527606
 /home/origamidance/Websites/origamidance.gitlab.io/themes|4.76259|1478873183
 /home/origamidance/Repos/Cinder/samples/Imgui/build/Release|2.96307|1473862138
@@ -118,7 +119,7 @@
 /home/origamidance/Repos/Cinder/samples/PolygonBoolean/proj|1.38706|1473690828
 /home/ran/.gnupg|1.74815|1462143075
 /home/origamidance/dependencies/of_v0.9.3_linux64_release/libs/openFrameworksCompiled/lib|1.21591|1469201024
-/home/origamidance/.emacs.d/layers/+lang/c-c++|1.18098|1477250506
+/home/origamidance/.emacs.d/layers/+lang/c-c++|2.52089|1480587351
 /home/origamidance/Repos/Horde3D/build/Horde3D/Samples/Knight/CMakeFiles|1.07618|1473090921
 /home/origamidance/.customized_scripts/cmake_ninja_wrapper.py|2.15363|1480527143
 /var/lib/AccountsService/users|1.41721|1464768292
@@ -193,7 +194,7 @@
 /home/origamidance/dependencies/libigl/tutorial/106_ViewerMenu/examples|2.10452|1473180135
 /home/origamidance/.dotfiles/spacemacs-private/snippets|1.458|1478260675
 /home/origamidance/dependencies/graphite3_1.3.5/geogram/bin|3.10591|1478795320
-/home/origamidance/.dotfiles|10.3348|1480585493
+/home/origamidance/.dotfiles|11.2648|1480587689
 /home/origamidance/Downloads/geogram_1.3.11|2.9983|1478184785
 /home/origamidance/Research/ofxGeoFramework/compile_commands.json|1.34782|1470414181
 /home/origamidance/dependencies/nativefiledialog/build/bin|2.61|1480427190
@@ -233,7 +234,7 @@
 /home/origamidance/Repos/Cinder/src|1.54118|1473866176
 /home/origamidance/dependencies/ogdf/include/ogdf|3.68573|1480355455
 /home/origamidance/dependencies/openFrameworks/libs/fmodex/lib|1.59341|1472563997
-/home/origamidance/.mackup|1.14241|1470929395
+/home/origamidance/.mackup|3.25473|1480587216
 /home/origamidance/.customized_scripts|4.72053|1480527399
 /home/origamidance/Repos/Cinder/blocks/Cinder-ImGui/samples/Basic/assets|1.19575|1473691622
 /usr/include/c++/6.1.1|1.35733|1470397999
@@ -273,13 +274,14 @@
 /home/origamidance/.dotfiles/images|2.5|1480585496
 /home/origamidance/Websites/origamidance.gitlab.io/themes/HugoMDL/exampleSite|2.62832|1478871258
 /home/origamidance/Repos/Cinder/samples|7.18358|1474028116
-/home/origamidance/.spacemacs.d/layers|4.90532|1478629994
+/home/origamidance/.spacemacs.d/layers|6.02254|1480587684
 /home/ran/Forked-repos/of/ofLiveApp|1.46282|1466453794
 /home/ran/.config/xfce4|1.2703|1459264447
 /home/origamidance/Repos/Cinder/samples/FallingGears|3.36696|1473694540
 /home/origamidance/Playground/Cinder/samples/Geometry-ImGui/build|3.50081|1477252033
 /home/origamidance/Repos/Cinder/samples/PolygonBoolean/proj/cmake|1.69941|1473690827
 /home/origamidance/Research/of/addons/ofxAssimpModelLoader/src|1.08296|1469203113
+/home/origamidance/.spacemacs.d/layers/c-c++|1|1480587533
 /home/origamidance/Repos/Cinder/samples/Geometry/assets|1.32861|1473852241
 /home/origamidance/.local|2.4726|1478781551
 /home/origamidance/Research/Measurement/MFP/checkerboard_1mm_2x2/IMG_0050.CR2|2.51579|1477504160
@@ -375,8 +377,8 @@
 /home/origamidance/.mackup.cfg|2|1480585704
 /home/origamidance/dependencies/ogdf/test|4.30983|1480356814
 /home/origamidance/dependencies/Lemon/build/demo|3.68573|1480362190
-/home/origamidance/Repos/Horde3D/build/Extensions/Terrain/Sample|1.39681|1473091871
 /home/origamidance/Playground/CinderGP/build/libCinder-ImGui.a|3.55441|1480527606
+/home/origamidance/Repos/Horde3D/build/Extensions/Terrain/Sample|1.39681|1473091871
 /opt/openFrameworks/examples/3d|1.50698|1469194244
 /opt/openFrameworks/libs/poco/lib/linux64|1.04096|1469016689
 /home/origamidance/Repos/Horde3D/build/Extensions/Terrain|1.07618|1473091071
@@ -550,6 +552,7 @@
 /home/origamidance/Downloads/toptracker_desktop_amd64.deb|3.78906|1478524140
 /home/origamidance/Research/mech_trans/data/geometryMeshes/Box.ply|1.07618|1472830981
 /home/origamidance/Repos/ceres-solver/build/bin|1.90269|1477690880
+/home/origamidance/.mackup/clion.cfg|1|1480587212
 /home/origamidance/Playground/CinderGP/Cinder-ImGui|6.05997|1480095719
 /home/origamidance/Research/Measurement/MFP/checkerboard_1mm_4x4/result.exr|1.3122|1477575195
 /home/origamidance/Research/of/lib-linux|1.98282|1469199165
@@ -577,6 +580,7 @@
 /home/origamidance/Repos/bgfx/.build/linux64_gcc/bin|1.41144|1470136111
 /home/origamidance/dependencies/libigl/external|1.76287|1473165233
 /opt/openFrameworks/libs/poco|1.46282|1468949584
+/home/origamidance/.dotfiles/backup_work/.spacemacs.d|3.83446|1480587263
 /home/origamidance/Websites/exampleSite/themes|3.31716|1478871543
 /home/origamidance/Repos/goxel|1.46795|1470056178
 /home/origamidance/Research/of/addons/ofxAssimpModelLoader/libs|1.29066|1469203165
@@ -658,6 +662,7 @@
 /home/origamidance/Playground/CinderGP/Cinder-ImGui/lib|2.62832|1478877066
 /home/origamidance/dependencies/ogdf/ogdf|2.61|1480355548
 /home/origamidance/dependencies/ycmd/ycmd|2.75836|1480092962
+/home/origamidance/.spacemacs|1|1480587303
 /home/origamidance/dependencies/openFrameworks/libs/tess2/include|1.48555|1472566959
 /home/origamidance/Repos/Cinder|7.92533|1473955237
 /home/origamidance/Repos/Cinder/blocks/Box2D/src/Box2D|1.32861|1473693872
@@ -676,11 +681,12 @@
 /usr/local/MATLAB/R2016a/bin|1.3122|1477476093
 /home/origamidance/Research/ofLiveApp/build/build|1.21723|1469017078
 /home/origamidance/Repos/Cinder/samples/Picking3D/proj/cmake/build/Release|1.38706|1473353388
-/home/origamidance/.dotfiles/backup_work|6.12258|1480585492
+/home/origamidance/.dotfiles/backup_work|7.32581|1480587260
 /home/origamidance/Websites/origamidance.gitlab.io/static|3.73828|1480069760
 /home/origamidance/dependencies/openFrameworks/libs/glm/include/glm|1.59679|1472565373
 /home/origamidance/Websites/origamidance.gitlab.io/themes/hugomdl/static/images|1.71242|1477224253
 /home/origamidance/Playground/Cinder/samples/ArcballDemo/build|8.9904|1480510282
+/home/origamidance/.dotfiles/backup_work/.spacemacs.d/layers|2.5|1480587299
 /home/origamidance/Websites/HugoMDL|2.87794|1478871541
 /home/origamidance/Playground/Cinder/samples/_opengl/VboMesh/build/Release/opengl-VboMesh|2.1141|1478703943
 /home/origamidance/wiki/public|5.18033|1478103407
