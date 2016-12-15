@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<history>
+<session>
+<command time_stamp="158d4a59a5f">%-- 12/06/2016 03:59:33 PM --%</command>
+<command execution_time="16531">analysis</command>
+<command execution_time="785">I=imread('checkerboard.TIF');</command>
+<command execution_time="9">clear</command>
+<command execution_time="572">I=imread('checkerboard.TIF');</command>
+<command execution_time="363">imshow(I)</command>
+<command execution_time="641">line_profile_generator</command>
+<command execution_time="106">imagesc(G)</command>
+<command execution_time="429">imshow(G)</command>
+<command execution_time="454">imshow(B)</command>
+<command batch="1">imshow(G)</command>
+</session>
+<session>
+<command time_stamp="158d4c3fb4d">%-- 12/06/2016 04:32:43 PM --%</command>
+<command execution_time="656">line_profile_generator</command>
+<command execution_time="1890">imshow(R)</command>
+<command execution_time="527">edgeR=edge(R);</command>
+<command execution_time="389">imshow(edgeR)</command>
+<command execution_time="1234">edgeR=edge(R,'canny');</command>
+<command execution_time="393">imshow(edgeR)</command>
+<command error="true" execution_time="13">edgeR=edge(R,'approxcanny');</command>
+<command execution_time="605">edgeR=edge(R,'canny',0.9);</command>
+<command execution_time="341">imshow(edgeR)</command>
+<command execution_time="570">edgeR=edge(R,'canny',0.5);</command>
+<command execution_time="368">imshow(edgeR)</command>
+<command execution_time="673">edgeR=edge(R,'canny',0.3);</command>
+<command execution_time="363">imshow(edgeR)</command>
+<command execution_time="667">edgeR=edge(R,'canny',0.1);</command>
+<command execution_time="299">imshow(edgeR)</command>
+<command execution_time="777">edgeR=edge(R,'log');</command>
+<command execution_time="336">imshow(edgeR)</command>
+<command execution_time="574">edgeR=edge(R,'canny',0.2);</command>
+<command execution_time="334">imshow(edgeR)</command>
+<command execution_time="376">imshow(R)</command>
+<command execution_time="263">edgeR=edge(R,'Prewitt');</command>
+<command execution_time="322">imshow(edgeR)</command>
+<command error="true" execution_time="15">edgeR=edge(I,'canny');</command>
+<command error="true" execution_time="121">Gray=im2gray(I);</command>
+<command execution_time="20">Gray=rgb2gray(I);</command>
+<command execution_time="378">imshow(Gray)</command>
+<command execution_time="1685">edgeGray=edge(Gray,'Sobel')</command>
+<command execution_time="269">edgeGray=edge(Gray,'Sobel');</command>
+<command execution_time="298">imshow(edgeGray)</command>
+<command error="true" execution_time="31">imshow(Gray,'zerocross')</command>
+<command execution_time="950">edgeR=edge(R,'canny');</command>
+<command execution_time="305">imshow(edgeR)</command>
+<command execution_time="641">contour(R)</command>
+<command execution_time="5960">surf(R)</command>
+<command execution_time="373">imshow(R)</command>
+<command execution_time="87">imagesc(R)</command>
+<command execution_time="91">image(R)</command>
+<command execution_time="1179">imtool(R);</command>
+<command execution_time="1065">BW=im2bw(Gray)</command>
+<command execution_time="13">BW=im2bw(Gray);</command>
+<command execution_time="286">imshow(BW)</command>
+<command execution_time="2119">edgeBW=edge(BW,'canny')</command>
+<command execution_time="551">edgeBW=edge(BW,'canny');</command>
+<command execution_time="298">imshow(edgeBW)</command>
+<command execution_time="565">edgeBW=edge(BW,'canny',0.8);</command>
+<command execution_time="291">imshow(edgeBW)</command>
+<command execution_time="516">edgeBW=edge(BW,'canny',0.1);</command>
+<command execution_time="271">imshow(edgeBW)</command>
+<command error="true" execution_time="368">edgeBW=edge(BW,'canny',1.0);</command>
+<command execution_time="480">imshow(edgeBW)</command>
+<command execution_time="2224">edgeBW=edge(BW,'log',10);</command>
+<command execution_time="316">imshow(edgeBW)</command>
+<command execution_time="2337">edgeBW=edge(BW,'log',0);</command>
+<command execution_time="319">imshow(edgeBW)</command>
+<command execution_time="558">contour(edgeBW)</command>
+<command execution_time="5578">imagesc(edgeBW)</command>
+<command execution_time="395">imshow(Gray)</command>
+<command execution_time="287">imshow(BW)</command>
+<command batch="2">cc = bwconncomp(BW);</command>
+<command batch="2">lblMatrix = labelmatrix(cc);</command>
+<command batch="2" execution_time="453">imshow(lblMatrix)</command>
+<command execution_time="115">imagesc(lblMatrix)</command>
+<command batch="3" error="true">edgeMatrix=edges(lblMatrix,'log',0);</command>
+<command batch="3" error="true" execution_time="71">imshow(edgeMatrix)</command>
+<command execution_time="38">test=edgeBW(BW);</command>
+<command execution_time="557">test=bwboundaries(BW);</command>
+<command execution_time="39">figure</command>
+<command execution_time="150">imshow(BW);</command>
+<command execution_time="24">plot(test{1});</command>
+<command execution_time="197">imshow(BW);</command>
+<command execution_time="18">plot(test{1}(:,1),test{1}(:,2));</command>
+<command execution_time="197">imshow(BW);</command>
+<command execution_time="11">hold on</command>
+<command execution_time="11">plot(test{1}(:,1),test{1}(:,2));</command>
+</session>
+<session>
+<command time_stamp="158d4da4608">%-- 12/06/2016 04:57:04 PM --%</command>
+<command execution_time="1885">line_profile_generator</command>
+<command execution_time="597">test=bwboundaries(BW);</command>
+<command execution_time="1783">imshow(BW);</command>
+<command execution_time="15">hold on</command>
+<command execution_time="29">plot(test{1}(:,2),test{1}(:,1));</command>
+<command execution_time="374">imshow(I)</command>
+<command execution_time="10">CenterI=I(200:2600,1500:3800);</command>
+<command execution_time="366">imshow(CenterI)</command>
+<command execution_time="373">imshow(I)</command>
+<command execution_time="14">CenterI=I(1500:3700,200:2600);</command>
+<command execution_time="381">imshow(CenterI)</command>
+<command execution_time="444">imshow(R)</command>
+<command execution_time="13">CenterI=I(1200:3700,200:2700);</command>
+<command execution_time="364">imshow(CenterI)</command>
+<command execution_time="10">CenterI=I(1300:3700,200:2600);</command>
+<command execution_time="351">imshow(CenterI)</command>
+<command execution_time="12">CenterI=I(1200:3700,200:2700);</command>
+<command execution_time="338">imshow(CenterI)</command>
+</session>
+<session>
+<command time_stamp="158d4e0c044">%-- 12/06/2016 05:04:09 PM --%</command>
+<command execution_time="1019" repeat="4">line_profile_generator</command>
+<command execution_time="1783">imshow(I)</command>
+<command error="true" execution_time="12">tI=transpose(I);</command>
+<command execution_time="1165">imtool(checkerboard);</command>
+<command execution_time="366" repeat="3">imshow(checkerboard)</command>
+<command execution_time="773">line_profile_generator</command>
+<command execution_time="328">imshow(I)</command>
+<command execution_time="326" repeat="2">imshow(checkerboard)</command>
+<command error="true" execution_time="31">line_profile_generator</command>
+<command execution_time="331">imshow(I)</command>
+<command execution_time="39">Ir=imrotate(I,90);</command>
+<command execution_time="980" repeat="2">line_profile_generator</command>
+<command execution_time="91">Ir=imrotate(I,90);</command>
+<command execution_time="405" repeat="2">imshow(Ir)</command>
+<command execution_time="836" repeat="2">line_profile_generator</command>
+<command execution_time="328" repeat="2">imshow(I)</command>
+<command execution_time="1034">line_profile_generator</command>
+<command execution_time="308">imshow(I)</command>
+<command execution_time="16">Ic=I(900:3300,1400:3800,:);</command>
+<command execution_time="311">imshow(Ic)</command>
+<command execution_time="813">line_profile_generator</command>
+<command execution_time="494">imshow(BW)</command>
+<command execution_time="181">[M,D]=imgradient(BW);</command>
+<command execution_time="306">imshow(M)</command>
+<command execution_time="93">[M,D]=imgradient(BW,'Prewitt');</command>
+<command execution_time="318">imshow(M)</command>
+<command error="true" execution_time="28">[M,D]=imgradient(BW,'canny');</command>
+<command execution_time="96">[M,D]=imgradient(BW,'sobel');</command>
+<command execution_time="353">imshow(M)</command>
+<command execution_time="137">[M,D]=imgradient(BW,'centraldifference');</command>
+<command execution_time="325">imshow(M)</command>
+<command error="true" execution_time="18">[M,D]=imgradient(BW,'intermidiatedifference');</command>
+<command execution_time="73">[M,D]=imgradient(BW,'intermediatedifference');</command>
+<command execution_time="305">imshow(M)</command>
+<command execution_time="84">[M,D]=imgradient(BW);</command>
+<command execution_time="317">imshow(M)</command>
+<command execution_time="60">[edgeBW,]=imgradient(BW);</command>
+<command execution_time="329">imshow(edgeBW)</command>
+<command execution_time="12">theta=0:0.01:180;</command>
+<command batch="4" error="true">[RI,xp]=radon(edgeBW,theta);</command>
+<command batch="4" error="true" execution_time="84056">sdasd</command>
+<command execution_time="9">theta=0:0.1:180;</command>
+<command execution_time="8309">[RI,xp]=radon(edgeBW,theta);</command>
+<command execution_time="340">imshow(RI)</command>
+<command execution_time="115">imagesc(RI)</command>
+<command batch="5">figure, imagesc(theta, xp, RI); colormap(hot);</command>
+<command batch="5">xlabel('\theta (degrees)'); ylabel('x\prime');</command>
+<command batch="5">title('R_{\theta} (x\prime)');</command>
+<command batch="5" execution_time="460">colorbar</command>
+<command execution_time="310">histogram(RI)</command>
+<command batch="6">figure, imagesc(theta, xp, RI); colormap(hot);</command>
+<command batch="6">xlabel('\theta (degrees)'); ylabel('x\prime');</command>
+<command batch="6">title('R_{\theta} (x\prime)');</command>
+<command batch="6" execution_time="274">colorbar</command>
+<command batch="7">[,M]=max(RI(:));</command>
+<command batch="7" execution_time="17">[Mx, My] = ind2sub(size(RI),M);</command>
+<command execution_time="362">imshow(RI)</command>
+<command execution_time="10">[MI,M]=max(RI(:));</command>
+<command execution_time="10">[Mx, My] = ind2sub(size(RI),M);</command>
+<command batch="8">figure, imagesc(theta, xp, RI); colormap(hot);</command>
+<command batch="8">xlabel('\theta (degrees)'); ylabel('x\prime');</command>
+<command batch="8">title('R_{\theta} (x\prime)');</command>
+<command batch="8" execution_time="269">colorbar</command>
+<command execution_time="42">figure</command>
+<command execution_time="14">imagesc(RI);</command>
+<command execution_time="10">hold on</command>
+<command execution_time="13">plot(Mx,My);</command>
+<command execution_time="9">plot(Mx,My,'r.');</command>
+<command error="true" execution_time="77">plot(Mx,My,'r.',MarkerSize,'20');</command>
+<command execution_time="9">plot(Mx,My,'r.','MarkerSize',20);</command>
+<command execution_time="40">figure;</command>
+<command execution_time="12">imagesc(RI);</command>
+<command execution_time="9">hold on</command>
+<command execution_time="12">plot(Mx,My,'r.','MarkerSize',20);</command>
+<command execution_time="44" repeat="2">plot(Mx,My,'r*','MarkerSize',20);</command>
+<command execution_time="143">Irotate=imrotate(I,My/10);</command>
+<command execution_time="266">imshow(Irotate)</command>
+<command execution_time="50">Irotate=imrotate(I,-My/10);</command>
+<command execution_time="268">imshow(Irotate)</command>
+<command execution_time="43">figure</command>
+<command error="true" execution_time="44">profile</command>
+<command execution_time="10531" repeat="3">improfile</command>
+<command execution_time="8">sampleRegion=Irotate(350:450,950:1800);</command>
+<command execution_time="263">imshow(sampleRegion)</command>
+<command execution_time="13">test=mean(sampleRegion);</command>
+<command execution_time="10">sampleRegion=Irotate(350:450,950:1800,:);</command>
+<command execution_time="11">test=mean(sampleRegion);</command>
+<command execution_time="3779">implay(test);</command>
+<command execution_time="14">testR=test(:,:,1)</command>
+<command execution_time="119">plot(testR)</command>
+<command execution_time="310">imshow(Irotate)</command>
+<command batch="9">sampleRegion=Irotate(350:450,950:1800,:);</command>
+<command batch="9">sampleProfile=mean(sampleRegion);</command>
+<command batch="9">checkerboardRegion=Irotate(2150:2250,950:1800,:);</command>
+<command batch="9" execution_time="29">checkerboardProfile=mean(checkerboardRegion);</command>
+<command execution_time="46">plot(sampleProfile(:,:,1));</command>
+<command execution_time="11">hold on</command>
+<command execution_time="9">plot(checkerboardProfile(:,:,1));</command>
+<command execution_time="293">imshow(Irotate)</command>
+<command batch="10">sampleRegion=Irotate(350:450,950:1800,:);</command>
+<command batch="10">sampleProfile=mean(sampleRegion);</command>
+<command batch="10">checkerboardRegion=Irotate(1650:1750,950:1800,:);</command>
+<command batch="10" execution_time="26">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="11">plot(sampleProfile(:,:,1));</command>
+<command batch="11">hold on</command>
+<command batch="11" execution_time="61">plot(checkerboardProfile(:,:,1));</command>
+<command execution_time="299" repeat="2">imshow(Irotate)</command>
+<command execution_time="270">imshow(checkerboardRegion)</command>
+</session>
+<session>
+<command time_stamp="158de967380">%-- 12/08/2016 02:19:12 PM --%</command>
+<command execution_time="10040" repeat="2">line_profile_generator</command>
+<command execution_time="2050">imshow(Irotate)</command>
+<command execution_time="13">test=Irotate(2050:2250,900:1150);</command>
+<command execution_time="312">imshow(test)</command>
+<command execution_time="14">test=Irotate(2050:2250,900:1150,:);</command>
+<command execution_time="356">imshow(test)</command>
+<command error="true" execution_time="15">ave=mean(test;)</command>
+<command execution_time="13">ave=mean(test);</command>
+<command execution_time="15">ave=mean(ave,2);</command>
+<command execution_time="389">imshow(Irotate)</command>
+<command error="true" execution_time="16">test2=Irotate(2050:2250,1500,1750,:);</command>
+<command execution_time="12">test2=Irotate(2050:2250,1500:1750,:);</command>
+<command execution_time="12">ave2=mean(test);</command>
+<command execution_time="13">ave2=mean(ave2,2);</command>
+<command execution_time="316">imshow(test2)</command>
+<command execution_time="12">ave2=mean(test2);</command>
+<command execution_time="12">ave2=mean(ave2,2);</command>
+</session>
+</history>
