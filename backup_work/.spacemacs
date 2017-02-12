@@ -31,8 +31,8 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     rust
-     yaml
+     ;; rust
+     ;; yaml
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -43,7 +43,7 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
-     html
+     ;; html
      git
      markdown
      (org :variables
@@ -53,10 +53,10 @@ values."
             shell-default-position 'bottom)
      spell-checking
      ;; syntax-checking
-     latex
+     (latex :variables latex-enable-auto-fill nil)
      gtags
      (c-c++ :variables
-            c-c++-enable-clang-support t
+            ;; c-c++-enable-clang-support t
             c-c++-default-mode-for-headers 'c++-mode
             company-show-numbers t)
      ;; version-control
@@ -65,13 +65,13 @@ values."
              colors-enable-nyan-cat-progress-bar t
              )
      ycmd
-     (wakatime :variables
-               wakatime-api-key  "1dc9220a-aa34-454d-b232-25c0ac8814db"
-               ;; use the actual wakatime path
-               wakatime-cli-path "/usr/bin/wakatime"
-               global-wakatime-mode t)
+     ;; (wakatime :variables
+     ;;           wakatime-api-key  "1dc9220a-aa34-454d-b232-25c0ac8814db"
+     ;;           ;; use the actual wakatime path
+     ;;           wakatime-cli-path "/usr/bin/wakatime"
+     ;;           global-wakatime-mode t)
      extra-langs
-     dash
+     ;; dash
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -341,25 +341,25 @@ you should place your code here."
     "i"  'helm-semantic
     "gr" 'helm-gtags-dwim
     )
-  ;; ;; Make evil-mode up/down operate in screen lines instead of logical lines
-  ;; (define-key evil-motion-state-map "j" 'evil-next-visual-line)
-  ;; (define-key evil-motion-state-map "k" 'evil-previous-visual-line)
-  ;; ;; Also in visual mode
-  ;; (define-key evil-visual-state-map "j" 'evil-next-visual-line)
-  ;; (define-key evil-visual-state-map "k" 'evil-previous-visual-line)
-  ;; This snippet allows you to run clang-format before saving
-  ;; given the current file as the correct filetype.
-  ;; This relies on the c-c++ layer being enabled.
-  (defun clang-format-for-filetype ()
-    "Run clang-format if the current file has a file extensions
-in the filetypes list."
-    (let ((filetypes '("c" "cpp" "h" "hpp")))
-      (when (member (file-name-extension (buffer-file-name)) filetypes)
-        (clang-format-buffer))))
+  ;; Make evil-mode up/down operate in screen lines instead of logical lines
+  (define-key evil-motion-state-map "j" 'evil-next-visual-line)
+  (define-key evil-motion-state-map "k" 'evil-previous-visual-line)
+  ;; Also in visual mode
+  (define-key evil-visual-state-map "j" 'evil-next-visual-line)
+  (define-key evil-visual-state-map "k" 'evil-previous-visual-line)
+;;   ;; This snippet allows you to run clang-format before saving
+;;   ;; given the current file as the correct filetype.
+;;   ;; This relies on the c-c++ layer being enabled.
+;;   (defun clang-format-for-filetype ()
+;;     "Run clang-format if the current file has a file extensions
+;; in the filetypes list."
+;;     (let ((filetypes '("c" "cpp" "h" "hpp")))
+;;       (when (member (file-name-extension (buffer-file-name)) filetypes)
+;;         (clang-format-buffer))))
 
-  ;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html for
-  ;; what this line means
-  (add-hook 'before-save-hook 'clang-format-for-filetype)
+;;   ;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html for
+;;   ;; what this line means
+;;   (add-hook 'before-save-hook 'clang-format-for-filetype)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -458,10 +458,12 @@ Added: %U
  '(wakatime-cli-path "/home/origamidance/wakatime")
  '(wakatime-python-bin "/usr/bin/python")
  '(wolfram-alpha-app-id "2WP84Y-PWU95PVX2P")
+ '(ycmd-force-semantic-completion nil)
  '(ycmd-seed-identifiers-with-keywords t)
  '(ycmd-server-command
    (quote
-    ("python" "/home/origamidance/dependencies/ycmd/ycmd"))))
+    ("python" "/home/origamidance/dependencies/ycmd/ycmd")))
+ '(ycmd-tag-files (quote auto)))
  
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

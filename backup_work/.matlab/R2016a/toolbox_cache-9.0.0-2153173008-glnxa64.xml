@@ -1,4 +1,4 @@
-<MathWorks type="Path Cache File" version="1.1" date="Thu Dec 08 14:19:04 2016">
+<MathWorks type="Path Cache File" version="1.1" date="Thu Jan 12 13:34:32 2017">
  <D name="matlab/elmat">
   <D name="matlab/elmat/+matlab">
    <D name="matlab/elmat/+matlab/+internal">
@@ -638,7 +638,7 @@
   <F name="numArgumentsFromSubscript.m"/>
   <F name="or.m"/>
   <F name="paren.m"/>
-  <F name="plus.m"/>
+  <N name="plus.m"/>
   <N name="power.m"/>
   <F name="punct.m"/>
   <N name="rdivide.m"/>
@@ -855,7 +855,7 @@
   <N name="ferror.m"/>
   <N name="fgetl.m"/>
   <N name="fgets.m"/>
-  <F name="filemarker.m"/>
+  <N name="filemarker.m"/>
   <N name="fileparts.m"/>
   <N name="fileread.m"/>
   <N name="filesep.m"/>
@@ -1617,7 +1617,7 @@
      <F name="dot2fig.m"/>
      <N name="getDefaultTextType.m"/>
      <F name="getTextType.m"/>
-     <F name="iscellstrlike.m"/>
+     <N name="iscellstrlike.m"/>
      <N name="ischarlike.m"/>
     </D>
    </D>
@@ -1692,7 +1692,7 @@
   <N name="strcmp.m"/>
   <N name="strcmpi.m"/>
   <N name="strfind.m"/>
-  <F name="strings.m"/>
+  <N name="strings.m"/>
   <N name="strjoin.m"/>
   <F name="strjust.m"/>
   <N name="strmatch.m"/>
@@ -1727,16 +1727,16 @@
        <F name="constructor.m"/>
        <F name="fileConstructor.m"/>
        <F name="fileMethod.m"/>
-       <F name="fullConstructor.m"/>
+       <C name="fullConstructor.m"/>
        <F name="localConstructor.m"/>
        <F name="localMethod.m"/>
        <F name="method.m"/>
        <F name="package.m"/>
-       <F name="packagedFunction.m"/>
+       <C name="packagedFunction.m"/>
        <F name="packagedItem.m"/>
-       <F name="packagedUnknown.m"/>
+       <C name="packagedUnknown.m"/>
        <F name="simpleElement.m"/>
-       <F name="simpleMCOSConstructor.m"/>
+       <C name="simpleMCOSConstructor.m"/>
        <F name="simpleMCOSElement.m"/>
       </D>
       <D name="matlab/general/+matlab/+internal/+language/+introspective/+classWrapper">
@@ -1744,8 +1744,8 @@
        <F name="UDD.m"/>
        <F name="base.m"/>
        <F name="raw.m"/>
-       <F name="rawMCOS.m"/>
-       <F name="rawUDD.m"/>
+       <C name="rawMCOS.m"/>
+       <C name="rawUDD.m"/>
        <F name="super.m"/>
        <F name="superMCOS.m"/>
        <F name="superUDD.m"/>
@@ -1764,20 +1764,20 @@
        <F name="atomicHelpContainer.m"/>
        <F name="extractH1Line.m"/>
        <F name="getQualifiedFileName.m"/>
-       <F name="isClassDirectory.m"/>
+       <N name="isClassDirectory.m"/>
        <F name="updateFromXML.m"/>
       </D>
       <D name="matlab/general/+matlab/+internal/+language/+introspective/+filecontext">
        <C name="LineInfo.p"/>
-       <F name="LineInfoIterator.p"/>
+       <C name="LineInfoIterator.p"/>
        <C name="LineInfoStack.p"/>
        <F name="isConstructor.p"/>
       </D>
       <D name="matlab/general/+matlab/+internal/+language/+introspective/+overloads">
-       <F name="displayOverloads.m"/>
+       <N name="displayOverloads.m"/>
        <F name="formatOverloads.m"/>
-       <F name="getOverloads.m"/>
-       <F name="hasOverloads.m"/>
+       <N name="getOverloads.m"/>
+       <N name="hasOverloads.m"/>
       </D>
       <D name="matlab/general/+matlab/+internal/+language/+introspective/+tabcompletion">
        <F name="fullfile_vfileparttail.m"/>
@@ -1804,7 +1804,7 @@
       </D>
       <D name="matlab/general/+matlab/+internal/+language/+introspective/@NameResolver">
        <F name="MCOSClassInformation.m"/>
-       <F name="NameResolver.m"/>
+       <C name="NameResolver.m"/>
        <F name="UDDClassInformation.m"/>
        <F name="doResolve.m"/>
        <F name="executeResolve.m"/>
@@ -1821,36 +1821,36 @@
        <N name="getCallerImports.m"/>
       </D>
       <F name="MCOSMetaResolver.m"/>
-      <F name="atomicHelpPart.m"/>
-      <F name="callHelpFunction.m"/>
-      <F name="casedStrCmp.m"/>
+      <C name="atomicHelpPart.m"/>
+      <N name="callHelpFunction.m"/>
+      <N name="casedStrCmp.m"/>
       <F name="errorDocCallback.m"/>
-      <F name="extractCaseCorrectedName.m"/>
-      <F name="extractFile.m"/>
+      <N name="extractCaseCorrectedName.m"/>
+      <N name="extractFile.m"/>
       <F name="extractHelpText.m"/>
-      <F name="fixFileNameCase.m"/>
-      <F name="fixLocalFunctionCase.m"/>
-      <F name="getAlternateHelpFunction.m"/>
-      <F name="getDocTopic.m"/>
-      <F name="getHelpFunction.m"/>
+      <N name="fixFileNameCase.m"/>
+      <N name="fixLocalFunctionCase.m"/>
+      <N name="getAlternateHelpFunction.m"/>
+      <N name="getDocTopic.m"/>
+      <N name="getHelpFunction.m"/>
       <F name="getMethod.m"/>
-      <F name="getPackageName.m"/>
+      <N name="getPackageName.m"/>
       <F name="getSimpleElement.m"/>
       <F name="getSimpleElementTypes.m"/>
-      <F name="hashedDirInfo.m"/>
-      <F name="helpParts.m"/>
+      <N name="hashedDirInfo.m"/>
+      <C name="helpParts.m"/>
       <F name="isAccessible.m"/>
-      <F name="isClassMFile.m"/>
-      <F name="isObjectDirectorySpecified.m"/>
-      <F name="isOperator.m"/>
+      <N name="isClassMFile.m"/>
+      <N name="isObjectDirectorySpecified.m"/>
+      <N name="isOperator.m"/>
       <F name="makePackagedName.m"/>
-      <F name="minimizePath.m"/>
+      <N name="minimizePath.m"/>
       <F name="removeDotsFromFilePath.m"/>
-      <F name="resolveName.m"/>
-      <F name="safeWhich.m"/>
-      <F name="separateImplicitDirs.m"/>
+      <N name="resolveName.m"/>
+      <N name="safeWhich.m"/>
+      <N name="separateImplicitDirs.m"/>
       <F name="showAddon.m"/>
-      <F name="splitOverqualification.m"/>
+      <N name="splitOverqualification.m"/>
      </D>
      <D name="matlab/general/+matlab/+internal/+language/+registry">
       <N name="findUnlicensedFunctions.m"/>
@@ -1974,7 +1974,7 @@
   <F name="movefile.m"/>
   <N name="namelengthmax.m"/>
   <C name="onCleanup.m"/>
-  <F name="open.m"/>
+  <N name="open.m"/>
   <F name="pack.m"/>
   <N name="path.m"/>
   <F name="path2rc.m"/>
@@ -1995,10 +1995,10 @@
   <F name="setmcruserdata.m"/>
   <F name="settings.m"/>
   <F name="syntax.m"/>
-  <F name="system.m"/>
+  <N name="system.m"/>
   <N name="toolboxdir.m"/>
   <F name="type.m"/>
-  <F name="unix.m"/>
+  <N name="unix.m"/>
   <F name="unloadlibrary.m"/>
   <N name="usejava.m"/>
   <F name="ver.m"/>
@@ -2666,7 +2666,7 @@
   <F name="supportpackagerootsetting.xml"/>
   <F name="toolbox_path_cache.m"/>
   <N name="userpath.m"/>
-  <F name="version.m"/>
+  <N name="version.m"/>
   <d name="classpath"/>
   <d name="path"/>
   <d name="template"/>
@@ -3367,7 +3367,7 @@
   <N name="hgfeval.m"/>
   <N name="hggetbehavior.m"/>
   <F name="hggetdisp.m"/>
-  <F name="hggroup.m"/>
+  <N name="hggroup.m"/>
   <F name="hgload.m"/>
   <F name="hgsave.m"/>
   <F name="hgsetdisp.m"/>
@@ -4486,7 +4486,7 @@
   <F name="dragrect.m"/>
   <N name="editmenufcn.m"/>
   <N name="errordlg.m"/>
-  <F name="export2wsdlg.m"/>
+  <N name="export2wsdlg.m"/>
   <F name="figflag.m"/>
   <F name="fignamer.m"/>
   <N name="filemenufcn.m"/>
@@ -4547,12 +4547,12 @@
   <N name="uigridcontainer.m"/>
   <F name="uiload.m"/>
   <N name="uimode.m"/>
-  <F name="uiopen.m"/>
+  <N name="uiopen.m"/>
   <N name="uipanel.m"/>
   <N name="uipushtool.m"/>
   <N name="uiputfile.m"/>
   <N name="uirestore.m"/>
-  <F name="uiresume.m"/>
+  <N name="uiresume.m"/>
   <F name="uisave.m"/>
   <F name="uisetcolor.m"/>
   <F name="uisetfont.m"/>
@@ -4666,11 +4666,11 @@
        <N name="unmapFile.m"/>
       </D>
       <N name="breakpointsForAllFiles.m"/>
-      <F name="clearAndSetBreakpointsForFile.m"/>
-      <F name="clearBreakpoint.m"/>
+      <N name="clearAndSetBreakpointsForFile.m"/>
+      <N name="clearBreakpoint.m"/>
       <N name="isSystemObjectFile.m"/>
       <F name="mdbclearfunction.m"/>
-      <F name="setBreakpoint.m"/>
+      <N name="setBreakpoint.m"/>
       <N name="unmapFilePath.m"/>
      </D>
      <D name="matlab/codetools/+internal/+matlab/+desktop/+preferences">
@@ -4917,7 +4917,7 @@
      <D name="matlab/codetools/+matlab/+codetools/+internal/+opentoline">
       <F name="mlxfile.m"/>
      </D>
-     <F name="getActionForFileType.m"/>
+     <N name="getActionForFileType.m"/>
      <F name="isFcnCalled.m"/>
     </D>
     <F name="requiredFilesAndProducts.m"/>
@@ -4928,10 +4928,10 @@
     </D>
     <D name="matlab/codetools/+matlab/+desktop/+editor">
      <D name="matlab/codetools/+matlab/+desktop/+editor/@Document">
-      <F name="Document.m"/>
+      <C name="Document.m"/>
      </D>
      <D name="matlab/codetools/+matlab/+desktop/+editor/@EditorUtils">
-      <F name="EditorUtils.m"/>
+      <C name="EditorUtils.m"/>
       <F name="javaCollectionToArray.m"/>
      </D>
      <D name="matlab/codetools/+matlab/+desktop/+editor/private">
@@ -4943,15 +4943,15 @@
      <F name="getActive.m"/>
      <F name="getActiveFilename.m"/>
      <F name="getAll.m"/>
-     <F name="indexToPositionInLine.m"/>
+     <N name="indexToPositionInLine.m"/>
      <F name="isEditorAvailable.m"/>
      <F name="isOpen.m"/>
      <F name="linesToText.m"/>
      <N name="newDocument.m"/>
-     <F name="openAndGoToFunction.m"/>
+     <N name="openAndGoToFunction.m"/>
      <F name="openAndGoToLine.m"/>
      <F name="openDocument.m"/>
-     <F name="positionInLineToIndex.m"/>
+     <N name="positionInLineToIndex.m"/>
      <F name="textToLines.m"/>
     </D>
     <D name="matlab/codetools/+matlab/+desktop/+vareditor">
@@ -4963,14 +4963,14 @@
      <D name="matlab/codetools/+matlab/+internal/+codeanalyzer/private">
       <N name="getValidMatlabCodefileExtensions.m"/>
      </D>
-     <F name="displayMessages.m"/>
-     <F name="getFullyQualifiedName.m"/>
-     <F name="getMessageOutputObject.m"/>
-     <F name="getMessages.m"/>
-     <F name="inputParser.m"/>
-     <F name="outputMsg.m"/>
-     <F name="returnMessageString.m"/>
-     <F name="returnMessageStruct.m"/>
+     <C name="displayMessages.m"/>
+     <N name="getFullyQualifiedName.m"/>
+     <N name="getMessageOutputObject.m"/>
+     <N name="getMessages.m"/>
+     <C name="inputParser.m"/>
+     <C name="outputMsg.m"/>
+     <C name="returnMessageString.m"/>
+     <C name="returnMessageStruct.m"/>
     </D>
     <D name="matlab/codetools/+matlab/+internal/+richeditor">
      <D name="matlab/codetools/+matlab/+internal/+richeditor/private">
@@ -5181,22 +5181,22 @@
   <F name="convertSpreadsheetDates.m"/>
   <F name="convertSpreadsheetExcelDates.m"/>
   <F name="coveragerpt.m"/>
-  <F name="datatipinfo.m"/>
-  <F name="dbclear.m"/>
-  <F name="dbcont.m"/>
+  <N name="datatipinfo.m"/>
+  <N name="dbclear.m"/>
+  <N name="dbcont.m"/>
   <F name="dbdown.m"/>
   <F name="dbmex.m"/>
-  <F name="dbquit.m"/>
+  <N name="dbquit.m"/>
   <N name="dbstack.m"/>
   <N name="dbstatus.m"/>
-  <F name="dbstep.m"/>
-  <F name="dbstop.m"/>
+  <N name="dbstep.m"/>
+  <N name="dbstop.m"/>
   <F name="dbtype.m"/>
   <F name="dbup.m"/>
   <F name="debug.m"/>
   <F name="deprpt.m"/>
   <F name="dofixrpt.m"/>
-  <F name="edit.m"/>
+  <N name="edit.m"/>
   <F name="filebrowser.m"/>
   <F name="fixcontents.m"/>
   <F name="fixquote.m"/>
@@ -5397,23 +5397,23 @@
     <F name="getPathItem.m"/>
     <F name="getReferenceLink.m"/>
     <F name="getTopicHelpText.m"/>
-    <F name="helpProcess.m"/>
+    <C name="helpProcess.m"/>
     <F name="hotlinkHelp.m"/>
     <F name="prepareHelpForDisplay.m"/>
    </D>
    <F name="buildHelpXML.m"/>
    <F name="checkForDemoRedirect.m"/>
    <F name="class2xml.m"/>
-   <F name="createMatlabCommandWithTitle.m"/>
-   <F name="createMatlabLink.m"/>
-   <F name="formatHelpTextLine.m"/>
-   <F name="getClassNameFromVariable.m"/>
-   <F name="getClassNameFromWS.m"/>
-   <F name="getInstanceIsa.m"/>
-   <F name="highlightHelp.m"/>
+   <N name="createMatlabCommandWithTitle.m"/>
+   <N name="createMatlabLink.m"/>
+   <N name="formatHelpTextLine.m"/>
+   <N name="getClassNameFromVariable.m"/>
+   <N name="getClassNameFromWS.m"/>
+   <N name="getInstanceIsa.m"/>
+   <N name="highlightHelp.m"/>
    <F name="isDocInstalled.m"/>
    <F name="isUnderDocroot.m"/>
-   <F name="makeDualCommand.m"/>
+   <N name="makeDualCommand.m"/>
    <F name="underDocroot.m"/>
   </D>
   <D name="matlab/helptools/+internal">
@@ -5467,7 +5467,7 @@
   <F name="docsearch.m"/>
   <F name="echodemo.m"/>
   <F name="functionSignatures.json"/>
-  <F name="help.m"/>
+  <N name="help.m"/>
   <F name="help2html.m"/>
   <F name="helpPopup.m"/>
   <F name="helpbrowser.m"/>
@@ -16272,7 +16272,7 @@
   <F name="DesktopToolset.xml"/>
   <F name="activecontour.m"/>
   <F name="adapthisteq.m"/>
-  <F name="adaptthresh.m"/>
+  <N name="adaptthresh.m"/>
   <C name="affine2d.m"/>
   <F name="affine3d.m"/>
   <F name="applylut.m"/>
@@ -16366,12 +16366,12 @@
   <F name="im2java2d.m"/>
   <N name="im2single.m"/>
   <F name="im2uint16.m"/>
-  <F name="im2uint8.m"/>
+  <N name="im2uint8.m"/>
   <F name="imabsdiff.m"/>
   <F name="imadd.m"/>
   <F name="imadjust.m"/>
   <F name="imapplymatrix.m"/>
-  <F name="imbinarize.m"/>
+  <N name="imbinarize.m"/>
   <F name="imbothat.m"/>
   <F name="imboxfilt.m"/>
   <F name="imboxfilt3.m"/>
@@ -16379,7 +16379,7 @@
   <F name="imclose.m"/>
   <N name="imcomplement.m"/>
   <F name="imcontour.m"/>
-  <F name="imcrop.m"/>
+  <N name="imcrop.m"/>
   <N name="imdilate.m"/>
   <F name="imdivide.m"/>
   <N name="imerode.m"/>
@@ -16465,12 +16465,12 @@
   <F name="offsetstrel.m"/>
   <F name="ordfilt2.m"/>
   <F name="otf2psf.m"/>
-  <F name="otsuthresh.m"/>
+  <N name="otsuthresh.m"/>
   <N name="padarray.m"/>
   <F name="para2fan.m"/>
   <F name="phantom.m"/>
   <F name="plotpickerlayout.xml"/>
-  <F name="poly2mask.m"/>
+  <N name="poly2mask.m"/>
   <F name="projective2d.m"/>
   <F name="psf2otf.m"/>
   <F name="psnr.m"/>
@@ -16769,12 +16769,12 @@
    </D>
    <C name="RSet.m"/>
    <C name="RSetTileManager.m"/>
-   <F name="buttonUpMonitor.m"/>
+   <C name="buttonUpMonitor.m"/>
    <F name="cancellableWaitbar.m"/>
    <F name="cpselectPoint.m"/>
-   <F name="getColorChoices.m"/>
-   <F name="getImageExtent.m"/>
-   <F name="imcropRect.m"/>
+   <N name="getColorChoices.m"/>
+   <N name="getImageExtent.m"/>
+   <C name="imcropRect.m"/>
    <C name="imcropRectButtonDown.m"/>
    <C name="imdistlineButtonDown.m"/>
    <F name="impolyVertex.m"/>
@@ -16897,14 +16897,14 @@
   <F name="imcolormaptool.m"/>
   <N name="imcontrast.m"/>
   <N name="imdisplayrange.m"/>
-  <F name="imdistline.m"/>
+  <C name="imdistline.m"/>
   <F name="imellipse.m"/>
   <F name="imfreehand.m"/>
   <F name="imgca.m"/>
   <F name="imgcf.m"/>
   <N name="imgetfile.m"/>
   <N name="imhandles.m"/>
-  <F name="imline.m"/>
+  <C name="imline.m"/>
   <F name="immagbox.m"/>
   <F name="immovie.m"/>
   <F name="imoverview.m"/>
@@ -16919,8 +16919,8 @@
   <F name="impoly.m"/>
   <F name="impositionrect.m"/>
   <F name="imputfile.m"/>
-  <F name="imrect.m"/>
-  <F name="imroi.m"/>
+  <C name="imrect.m"/>
+  <C name="imroi.m"/>
   <N name="imsave.m"/>
   <F name="imscrollpanel.m"/>
   <N name="imscrollpanel.p"/>
@@ -16934,7 +16934,7 @@
   <N name="iptremovecallback.m"/>
   <F name="ipttable.m"/>
   <N name="iptwindowalign.m"/>
-  <F name="makeConstrainToRectFcn.m"/>
+  <N name="makeConstrainToRectFcn.m"/>
   <F name="montage.m"/>
   <F name="subimage.m"/>
   <F name="truesize.m"/>

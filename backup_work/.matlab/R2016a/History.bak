@@ -222,4 +222,274 @@
 <command execution_time="299" repeat="2">imshow(Irotate)</command>
 <command execution_time="270">imshow(checkerboardRegion)</command>
 </session>
+<session>
+<command time_stamp="158de967380">%-- 12/08/2016 02:19:12 PM --%</command>
+<command execution_time="10040" repeat="2">line_profile_generator</command>
+<command execution_time="2050">imshow(Irotate)</command>
+<command execution_time="13">test=Irotate(2050:2250,900:1150);</command>
+<command execution_time="312">imshow(test)</command>
+<command execution_time="14">test=Irotate(2050:2250,900:1150,:);</command>
+<command execution_time="356">imshow(test)</command>
+<command error="true" execution_time="15">ave=mean(test;)</command>
+<command execution_time="13">ave=mean(test);</command>
+<command execution_time="15">ave=mean(ave,2);</command>
+<command execution_time="389">imshow(Irotate)</command>
+<command error="true" execution_time="16">test2=Irotate(2050:2250,1500,1750,:);</command>
+<command execution_time="12">test2=Irotate(2050:2250,1500:1750,:);</command>
+<command execution_time="12">ave2=mean(test);</command>
+<command execution_time="13">ave2=mean(ave2,2);</command>
+<command execution_time="316">imshow(test2)</command>
+<command execution_time="12">ave2=mean(test2);</command>
+<command execution_time="12">ave2=mean(ave2,2);</command>
+</session>
+<session>
+<command time_stamp="15964d6068f">%-- 01/03/2017 03:57:45 PM --%</command>
+<command execution_time="170">W1</command>
+<command execution_time="2125">imshow(I)</command>
+<command execution_time="21510">imcrop</command>
+<command execution_time="5110">colorchecker=imcrop</command>
+<command execution_time="22">mean(mean(colorchecker))</command>
+<command execution_time="12">ccW=mean(mean(colorchecker));</command>
+<command execution_time="4676">whiteP1=imcrop</command>
+<command execution_time="18">wp1W=mean(mean(whiteP1))</command>
+<command execution_time="5061">whiteP2=imcrop</command>
+<command execution_time="13">wp2W=mean(mean(whiteP2))</command>
+<command error="true" execution_time="24">wpR=wp1W/ccW;</command>
+<command execution_time="13">wpR=wp1W./ccW;</command>
+<command execution_time="15">ccR=[247/255,247/255,243/255]</command>
+<command error="true" execution_time="16">wpR=wpR.*ccR</command>
+<command error="true" execution_time="14">wpR=wpR.*ccR;</command>
+<command error="true" execution_time="13">wpR=[wpR(1,1,1),wr(1,1,2),wpR(1,1,3));</command>
+<command error="true" execution_time="72">wpR=[wpR(1,1,1),wr(1,1,2),wpR(1,1,3)];</command>
+<command execution_time="12">wpR=[wpR(1,1,1),wpR(1,1,2),wpR(1,1,3)];</command>
+<command execution_time="10">wpR=ccR.*wpR;</command>
+<command execution_time="117">W1</command>
+<command execution_time="366">imshow(I)</command>
+<command execution_time="398">imshow(BW)</command>
+<command execution_time="381">imshow(Gray)</command>
+<command execution_time="11">test=im2bw(Gray);</command>
+<command execution_time="312">imshow(test)</command>
+<command execution_time="482">help im2bw</command>
+<command execution_time="41">test=imbinarize(Gray);</command>
+<command execution_time="339">imshow(test)</command>
+<command execution_time="13">BW=imbinarize(Gray);</command>
+<command execution_time="342">imshow(BW)</command>
+<command execution_time="396">imshow(edgeBW)</command>
+<command execution_time="420">imshow(RI)</command>
+<command execution_time="129">imagesc(RI)</command>
+<command execution_time="457">imshow(Irotate)</command>
+<command execution_time="10707">sampleRegion=imcrop(Irotate);</command>
+<command execution_time="14">test=sampleProfile(1,:,1);</command>
+<command execution_time="121">plot(test)</command>
+<command execution_time="16">hold on;</command>
+<command execution_time="13">test2=checkerboardProfile(1,:,1);</command>
+<command execution_time="32">plot(test2)</command>
+<command execution_time="247">imshow(checkerboardRegion)</command>
+<command execution_time="371">imshow(Irotate)</command>
+<command execution_time="7">checkerboardRegion=Irotate(2750:2850,650:1450,:);</command>
+<command execution_time="166">imshow(checkerboardRegion)</command>
+<command execution_time="10">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="12">test=sampleProfile(1,:,1);</command>
+<command batch="12">plot(test)</command>
+<command batch="12">hold on;</command>
+<command batch="12">test2=checkerboardProfile(1,:,1);</command>
+<command batch="12" execution_time="62">plot(test2)</command>
+<command batch="13">sampleRegion=Irotate(1350:1450,650:1450,:);</command>
+<command batch="13">sampleProfile=mean(sampleRegion);</command>
+<command batch="13">checkerboardRegion=Irotate(2750:2850,650:1450,:);</command>
+<command batch="13" execution_time="22">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="14" repeat="2">test=sampleProfile(1,:,1);</command>
+<command batch="14">plot(test)</command>
+<command batch="14">hold on;</command>
+<command batch="14">test2=checkerboardProfile(1,:,1);</command>
+<command batch="14" execution_time="61">plot(test2)</command>
+<command execution_time="94" repeat="2">B1</command>
+<command execution_time="11">clc</command>
+<command execution_time="11">clear</command>
+<command execution_time="109" repeat="2">B1</command>
+<command error="true" execution_time="8">I=I(500:4000,300:2600,:);</command>
+<command execution_time="98">B1</command>
+<command execution_time="360">imshow(I)</command>
+<command execution_time="369">imshow(Irotate)</command>
+<command execution_time="67">Irotate=imrotate(Irotate,90);</command>
+<command execution_time="355" repeat="2">imshow(Irotate)</command>
+<command execution_time="347">imshow(I)</command>
+<command execution_time="292">imshow(Irotate)</command>
+<command execution_time="308">imshow(checkerboardRegion)</command>
+<command batch="15">sampleRegion=Irotate(1450:1550,850:1650,:);</command>
+<command batch="15">sampleProfile=mean(sampleRegion);</command>
+<command batch="15">checkerboardRegion=Irotate(2850:2950,850:1650,:);</command>
+<command batch="15" execution_time="24">checkerboardProfile=mean(checkerboardRegion);</command>
+<command execution_time="170">imshow(checkerboardRegion)</command>
+<command execution_time="168">imshow(sampleRegion)</command>
+<command execution_time="9">w12R=wp1W./wp2W;</command>
+<command error="true" execution_time="9">w12R=w12R(w12R(1,1,1),w12R(1,1,2),w12R(1,1,3));</command>
+<command error="true" execution_time="9">w12R=w12R[w12R(1,1,1),w12R(1,1,2),w12R(1,1,3)];</command>
+<command execution_time="11">w12R=[w12R(1,1,1),w12R(1,1,2),w12R(1,1,3)];</command>
+<command execution_time="12">sampleProfile(:,:,1)=sampleProfile(:,:,1)*w12R(1);</command>
+<command batch="16">sampleProfile(:,:,2)=sampleProfile(:,:,2)*w12R(2);</command>
+<command batch="16" execution_time="11">sampleProfile(:,:,3)=sampleProfile(:,:,3)*w12R(3);</command>
+<command batch="17">sampleRegion=Irotate(1450:1550,850:1650,:);</command>
+<command batch="17">sampleProfile=mean(sampleRegion);</command>
+<command batch="17">sampleProfile(:,:,1)=sampleProfile(:,:,1)*w12R(1);</command>
+<command batch="17">sampleProfile(:,:,2)=sampleProfile(:,:,2)*w12R(2);</command>
+<command batch="17">sampleProfile(:,:,3)=sampleProfile(:,:,3)*w12R(3);</command>
+<command batch="17">checkerboardRegion=Irotate(2850:2950,850:1650,:);</command>
+<command batch="17">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="17">checkerboardProfile(:,:,1)=checkerboardProfile(:,:,1)*w12R(1);</command>
+<command batch="17">checkerboardProfile(:,:,2)=checkerboardProfile(:,:,2)*w12R(2);</command>
+<command batch="17" execution_time="47">checkerboardProfile(:,:,3)=checkerboardProfile(:,:,3)*w12R(3);</command>
+<command error="true" execution_time="17">plot(sampleProfile(1,:,1);</command>
+<command execution_time="52">plot(sampleProfile(1,:,1));</command>
+<command batch="18">sampleRegion=Irotate(1450:1550,850:1650,:);</command>
+<command batch="18" execution_time="16">sampleProfile=mean(sampleRegion);</command>
+<command execution_time="47">plot(sampleProfile(1,:,1));</command>
+<command execution_time="303">imshow(sampleRegion)</command>
+<command execution_time="48">plot(sampleProfile(1,:,1));</command>
+<command execution_time="11">hold on;</command>
+<command execution_time="14">plot(checkerboardProfile(1,:,1));</command>
+<command batch="19">sampleRegion=Irotate(1450:1550,850:1650,:);</command>
+<command batch="19">sampleProfile=mean(sampleRegion);</command>
+<command batch="19">sampleProfile(:,:,1)=sampleProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="19">sampleProfile(:,:,2)=sampleProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="19">sampleProfile(:,:,3)=sampleProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command batch="19">checkerboardRegion=Irotate(2850:2950,850:1650,:);</command>
+<command batch="19">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="19">checkerboardProfile(:,:,1)=checkerboardProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="19">checkerboardProfile(:,:,2)=checkerboardProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="19" execution_time="47">checkerboardProfile(:,:,3)=checkerboardProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command batch="20" error="true">&gt; plot(sampleProfile(1,:,1));</command>
+<command batch="20" error="true">hold on;</command>
+<command batch="20" error="true" execution_time="13">plot(checkerboardProfile(1,:,1));</command>
+<command batch="21">plot(sampleProfile(1,:,1));</command>
+<command batch="21">hold on;</command>
+<command batch="21" execution_time="57">plot(checkerboardProfile(1,:,1));</command>
+<command execution_time="658">I=imread('B1.TIF');</command>
+<command execution_time="178">I=imrotate(I,90);</command>
+<command batch="22">blackP=imcrop(I);</command>
+<command batch="22">bpB=mean(mean(blackP));</command>
+<command batch="22" execution_time="5494">bpR=bpB./ccW;</command>
+<command batch="23">blackP=imcrop(I);</command>
+<command batch="23">bpB=mean(mean(blackP));</command>
+<command batch="23">bpR=bpB./ccW;</command>
+<command batch="23">bpR=[bpR(1,1,1),bpR(1,1,2),bpR(1,1,3)];</command>
+<command batch="23" execution_time="3322">bpR=ccR.*bpR;</command>
+<command execution_time="101">W1</command>
+<command execution_time="358">imshow(I)</command>
+<command execution_time="360" repeat="2">imshow(Irotate)</command>
+<command execution_time="314">imshow(checkerboardRegion)</command>
+<command execution_time="285">imshow(sampleRegion)</command>
+<command batch="24">plot(sampleProfile(1,:,1));</command>
+<command batch="24">hold on;</command>
+<command batch="24" execution_time="70">plot(checkerboardProfile(1,:,1));</command>
+<command execution_time="100">W05</command>
+<command execution_time="442">imshow(I)</command>
+<command execution_time="425">imshow(Irotate)</command>
+<command execution_time="359">imshow(checkerboardRegion)</command>
+<command execution_time="384">imshow(sampleRegion)</command>
+<command batch="25">plot(sampleProfile(1,:,1));</command>
+<command batch="25">hold on;</command>
+<command batch="25" execution_time="78">plot(checkerboardProfile(1,:,1));</command>
+<command batch="26">sampleRegion=Irotate(1450:1550,850:1650,:);</command>
+<command batch="26">sampleProfile=mean(sampleRegion);</command>
+<command batch="26">sampleProfile(:,:,1)=sampleProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="26">sampleProfile(:,:,2)=sampleProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="26">sampleProfile(:,:,3)=sampleProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command batch="26">checkerboardRegion=Irotate(2850:2950,850:1650,:);</command>
+<command batch="26">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="26">checkerboardProfile(:,:,1)=checkerboardProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="26">checkerboardProfile(:,:,2)=checkerboardProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="26" execution_time="46">checkerboardProfile(:,:,3)=checkerboardProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command batch="27">plot(sampleProfile(1,:,1));</command>
+<command batch="27">hold on;</command>
+<command batch="27" execution_time="64">plot(checkerboardProfile(1,:,1));</command>
+<command execution_time="318">imshow(Irotate)</command>
+<command execution_time="113">B05</command>
+<command execution_time="13">clear</command>
+<command execution_time="109">B05</command>
+<command execution_time="427">imshow(I)</command>
+<command execution_time="419">imshow(Irotate)</command>
+<command batch="28">plot(sampleProfile(1,:,1));</command>
+<command batch="28">hold on;</command>
+<command batch="28" execution_time="73">plot(checkerboardProfile(1,:,1));</command>
+</session>
+<session>
+<command time_stamp="15969e7ce71">%-- 01/04/2017 03:35:16 PM --%</command>
+<command execution_time="314">B1</command>
+<command execution_time="414">imshow(Irotate)</command>
+<command execution_time="1192">imtool(Irotate);</command>
+<command execution_time="430">imshow(Irotate)</command>
+<command batch="29">clear;</command>
+<command batch="29">I=imread('B1.TIF');</command>
+<command batch="29" execution_time="658">I=imrotate(I,90);</command>
+<command batch="30">I=I(500:4000,300:2600,:);</command>
+<command batch="30">Gray=rgb2gray(I);</command>
+<command batch="30">R=I(:,:,1);</command>
+<command batch="30">G=I(:,:,2);</command>
+<command batch="30">B=I(:,:,3);</command>
+<command batch="30">% extract line profile</command>
+<command batch="30">BW=imbinarize(Gray);</command>
+<command batch="30">[edgeBW,]=imgradient(BW);</command>
+<command batch="30">theta=0:0.1:180;</command>
+<command batch="30">[RI,xp]=radon(edgeBW,theta);</command>
+<command batch="30">[MI,M]=max(RI(:));</command>
+<command batch="30">[Mx, My] = ind2sub(size(RI),M);</command>
+<command batch="30" execution_time="10814">Irotate=imrotate(I,-My/10);</command>
+<command execution_time="411">imshow(Irotate)</command>
+<command execution_time="59">I=imrotate(I,90);</command>
+<command error="true" execution_time="14">Irotate=imrotate(Irotate)</command>
+<command execution_time="60">Irotate=imrotate(Irotate,90);</command>
+<command execution_time="388">imshow(Irotate)</command>
+<command batch="31" error="true">sampleRegion=Irotate(1450:1550,850:1650,:);</command>
+<command batch="31" error="true">sampleProfile=mean(sampleRegion);</command>
+<command batch="31" error="true">sampleProfile(:,:,1)=sampleProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="31" error="true">sampleProfile(:,:,2)=sampleProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="31" error="true">sampleProfile(:,:,3)=sampleProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command batch="31" error="true">checkerboardRegion=Irotate(2850:2950,850:1650,:);</command>
+<command batch="31" error="true">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="31" error="true">checkerboardProfile(:,:,1)=checkerboardProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="31" error="true">checkerboardProfile(:,:,2)=checkerboardProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="31" error="true" execution_time="427">checkerboardProfile(:,:,3)=checkerboardProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command batch="32" repeat="2">I=imread('B1.TIF');</command>
+<command batch="32">I=imrotate(I,90);</command>
+<command batch="32">colorchecker=imcrop(I);</command>
+<command batch="32">mean(mean(colorchecker));</command>
+<command batch="32">ccW=mean(mean(colorchecker));</command>
+<command batch="32">whiteP1=imcrop(I);</command>
+<command batch="32">wp1W=mean(mean(whiteP1));</command>
+<command batch="32">whiteP2=imcrop(I);</command>
+<command batch="32">wp2W=mean(mean(whiteP2));</command>
+<command batch="32">wpR=wp1W./ccW;</command>
+<command batch="32">ccR=[247/255,247/255,243/255];</command>
+<command batch="32">wpR=[wpR(1,1,1),wpR(1,1,2),wpR(1,1,3)];</command>
+<command batch="32">wpR=ccR.*wpR;</command>
+<command batch="32">w12R=wp1W./wp2W;</command>
+<command batch="32">w12R=[w12R(1,1,1),w12R(1,1,2),w12R(1,1,3)];</command>
+<command batch="32">blackP=imcrop(I);</command>
+<command batch="32">bpB=mean(mean(blackP));</command>
+<command batch="32">bpR=bpB./ccW;</command>
+<command batch="32">bpR=[bpR(1,1,1),bpR(1,1,2),bpR(1,1,3)];</command>
+<command batch="32" execution_time="17682">bpR=ccR.*bpR;</command>
+<command batch="33">sampleRegion=Irotate(1450:1550,850:1650,:);</command>
+<command batch="33">sampleProfile=mean(sampleRegion);</command>
+<command batch="33">sampleProfile(:,:,1)=sampleProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="33">sampleProfile(:,:,2)=sampleProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="33">sampleProfile(:,:,3)=sampleProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command batch="33">checkerboardRegion=Irotate(2850:2950,850:1650,:);</command>
+<command batch="33">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="33">checkerboardProfile(:,:,1)=checkerboardProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="33">checkerboardProfile(:,:,2)=checkerboardProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="33" execution_time="60">checkerboardProfile(:,:,3)=checkerboardProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command execution_time="153">imshow(sampleRegion)</command>
+<command execution_time="157">imshow(checkerboardRegion)</command>
+<command execution_time="24217">W1</command>
+<command execution_time="352">imshow(Irotate)</command>
+<command execution_time="226">imshow(checkerboardRegion)</command>
+<command execution_time="22543">W05</command>
+<command execution_time="345">imshow(Irotate)</command>
+<command execution_time="144">imshow(checkerboardRegion)</command>
+<command execution_time="24907">B05</command>
+<command execution_time="330">imshow(Irotate)</command>
+<command execution_time="141" repeat="2">imshow(checkerboardRegion)</command>
+</session>
 </history>

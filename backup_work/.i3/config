@@ -198,6 +198,7 @@ focus_follows_mouse no
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+    tray_output none
         #status_command i3blocks
 }
 
@@ -227,24 +228,35 @@ assign [instance="crx_jijnmpkkfkjaihbhffejemnpbbglahim"] 9 : $WS9
 exec_always --no-startup-id xset -b
 exec_always --no-startup-id fcitx
 exec_always --no-startup-id fcitx-qimpanel
-exec_always --no-startup-id compton -b
+exec --no-startup-id compton -b
 exec_always --no-startup-id /home/origamidance/.screenlayout/macbook.sh
 # exec rofi -key-run ControlL+space -key-window MetaL+Tab
 exec_always feh --bg-scale ~/.dotfiles/images/origamidance.jpg
 
 # Display
-workspace "1 : $WS1"output DP2
-workspace 2 output DP2
-workspace 8 output eDP1
-workspace 9 output eDP1
-workspace 10 output eDP1
-bindsym $mod+comma move workspace to output up
-bindsym $mod+period move workspace to output down
+# workspace "1 : $WS1"output DP2
+# workspace 2 output DP2
+# workspace 8 output eDP1
+# workspace 9 output eDP1
+# workspace 10 output eDP1
+# bindsym $mod+comma move workspace to output up
+# bindsym $mod+period move workspace to output down
+
+set $M_r DVI-I-1
+set $M_l DP-5
+
+workspace "1 : $WS1" output $M_r
+workspace 2 output $M_l
+workspace 8 output $M_r
+workspace 9 output $M_r
+workspace 10 output $M_l
+bindsym $mod+comma move workspace to output left
+bindsym $mod+period move workspace to output right
 
 ## quick terminal
 #exec --no-startup-id xfce4-terminal --drop-down
 #bindsym Mod1 + space exec xfce4-terminal --drop-down
-bindsym Mod1 + space exec tdrop -a -w 1914 -x 3 -y 23 xfce4-terminal
+bindsym Mod1 + space exec tdrop -a -m -w 100% -x 3 -y 23 xfce4-terminal
 
 ## rofi
 # bindsym Control + space exec rofi -run-command "zsh -c -i '{cmd}'" -combi-modi window,drun,run -show combi
@@ -252,6 +264,8 @@ bindsym Control + space exec --no-startup-id ~/.customized_scripts/rofi.sh
 #key bindings
 #package manager
 bindsym $mod+u exec pamac-manager
+#screen shot
+bindsym Print exec xfce4-screenshooter
 #double function keys
 exec --no-startup-id xcape -e 'Control_L=Escape'
 exec --no-startup-id xcape -e 'Super_L=space'

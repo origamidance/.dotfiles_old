@@ -15,3 +15,8 @@ echo "zsh done"
 # Customize to your needs...
 
 alias spcmacs="LC_CTYPE=zh_CN.UTF-8 emacs"
+
+export TAICHI_ROOT_DIR=~/Playground/
+export TAICHI_NUM_THREADS=8 # or any other number
+export PYTHONPATH=$TAICHI_ROOT_DIR/taichi/python/:$PYTHONPATH
+export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
