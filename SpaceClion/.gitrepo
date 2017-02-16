@@ -6,6 +6,6 @@
 [subrepo]
 	remote = https://github.com/origamidance/SpaceClion.git
 	branch = master
-	commit = 9fee026bf8a28819b691574f63a4d8af5bb442da
-	parent = 23850641196a25fedc6422946fa9dbfbfc894a63
+	commit = 2c5f53623fac04ba9f82ab69ab12f6e63ba4d85c
+	parent = be6219d3cadd77e398d2ea9c188d2c05316d7507
 	cmdver = 0.3.0
