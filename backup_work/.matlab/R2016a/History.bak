@@ -492,4 +492,127 @@
 <command execution_time="330">imshow(Irotate)</command>
 <command execution_time="141" repeat="2">imshow(checkerboardRegion)</command>
 </session>
+<session>
+<command time_stamp="15992601333">%-- 01/12/2017 12:11:27 PM --%</command>
+<command execution_time="6" repeat="10">test</command>
+<command execution_time="12">l1/(sind(alpha1))</command>
+<command execution_time="15">2.04*sind(70)-0.3</command>
+<command execution_time="11">2.04*sind(60)-0.3</command>
+<command execution_time="12">2.5*cosd(40)</command>
+<command execution_time="11" repeat="2">test</command>
+<command execution_time="11">d/2</command>
+<command execution_time="182">l2/(sind(alpha2))</command>
+<command execution_time="14">1.1981-d/2</command>
+</session>
+<session>
+<command time_stamp="15a37682de7">%-- 02/13/2017 01:17:39 PM --%</command>
+<command execution_time="14">247/255</command>
+<command error="true" execution_time="455">ln(0.9398)/ln(0.9686)</command>
+<command execution_time="310">help ln</command>
+<command execution_time="705">help log</command>
+<command execution_time="14">r(1)=0.4773</command>
+<command error="true" execution_time="10">r(2)==.5950</command>
+<command execution_time="14">r(2)=0.5950</command>
+<command execution_time="9">r(3)=0.7641</command>
+<command execution_time="28">r(4)=0.9398</command>
+<command execution_time="9">s(4)=247/255</command>
+<command execution_time="9">s(3)=224/255</command>
+<command execution_time="15">s(2)=200/255</command>
+<command execution_time="9">s(1)=181/255</command>
+<command error="true" execution_time="10">exrs=log2(r.)/log2(s.)</command>
+<command execution_time="160">exrs=log2(r)/log2(s)</command>
+<command execution_time="9">log2(r)</command>
+<command execution_time="8">exrs=log2(r)./log2(s)</command>
+<command execution_time="8">110/99</command>
+<command execution_time="13">247/224</command>
+<command execution_time="11">110/98</command>
+<command execution_time="10">98/85</command>
+<command execution_time="20">224/200</command>
+<command execution_time="14">99/85</command>
+<command execution_time="9">99/8</command>
+<command execution_time="9">99/84</command>
+<command execution_time="9">1/4.5</command>
+<command error="true" execution_time="6" repeat="2">0.9398/`88</command>
+<command execution_time="16">0.9398/188</command>
+<command execution_time="19">188/0.9398</command>
+<command execution_time="8">156/0.7641</command>
+<command error="true" execution_time="57522">B1</command>
+<command execution_time="519">imshow(Irotate)</command>
+<command error="true" execution_time="9">checkerboardRegion=Irotate(2850:2950,850:1650,:);</command>
+<command error="true" execution_time="32812">W1</command>
+<command execution_time="9">clear</command>
+<command error="true" execution_time="8430">W05</command>
+</session>
+<session>
+<command time_stamp="15a37ac11e3">%-- 02/13/2017 02:31:48 PM --%</command>
+<command error="true" execution_time="26642">B05</command>
+<command execution_time="529">imshow(sampleRegion)</command>
+<command execution_time="497">imshow(Irotate)</command>
+<command execution_time="54">Irotate=imrotate(Irotate,90);</command>
+<command execution_time="460">imshow(Irotate)</command>
+<command batch="34">sampleRegion=Irotate(1450:1550,850:1650,:);</command>
+<command batch="34">sampleProfile=mean(sampleRegion);</command>
+<command batch="34">sampleProfile(:,:,1)=sampleProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="34">sampleProfile(:,:,2)=sampleProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="34">sampleProfile(:,:,3)=sampleProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command batch="34">checkerboardRegion=Irotate(2850:2950,850:1650,:);</command>
+<command batch="34">checkerboardProfile=mean(checkerboardRegion);</command>
+<command batch="34">checkerboardProfile(:,:,1)=checkerboardProfile(:,:,1)*w12R(1)/wp1W(1,1,1)*wpR(1);</command>
+<command batch="34">checkerboardProfile(:,:,2)=checkerboardProfile(:,:,2)*w12R(2)/wp1W(1,1,2)*wpR(2);</command>
+<command batch="34" execution_time="43">checkerboardProfile(:,:,3)=checkerboardProfile(:,:,3)*w12R(3)/wp1W(1,1,3)*wpR(3);</command>
+<command execution_time="209">imshow(sampleRegion)</command>
+<command execution_time="440">imshow(checkerboardRegion)</command>
+<command execution_time="24">test=checkerboardProfile(:,:,1)</command>
+<command execution_time="122">plot(test)</command>
+<command execution_time="23108">B1</command>
+<command execution_time="160">imshow(sampleRegion)</command>
+<command execution_time="92">imshow(checkerboardRegion)</command>
+<command execution_time="22776">W1</command>
+<command execution_time="387">imshow(checkerboardRegion)</command>
+<command execution_time="72">imshow(sampleRegion)</command>
+<command execution_time="142">imshow(checkerboardRegion)</command>
+<command execution_time="34">figure</command>
+<command execution_time="17">hold on</command>
+<command execution_time="8">plot(checkerboardProfile(:,:,1));</command>
+<command execution_time="12">plot(sampleProfile(:,:,1));</command>
+<command execution_time="341">imshow(Irotate)</command>
+<command execution_time="7">load('checkerboard profile.mat')</command>
+<command execution_time="22740">W1</command>
+<command execution_time="407">imshow(Irotate)</command>
+<command batch="35" execution_time="42" repeat="2">plot(sampleProfile(:,:,1));</command>
+<command batch="35" execution_time="10">hold on</command>
+<command batch="35" execution_time="51">plot(checkerboardProfile(:,:,1));</command>
+<command execution_time="27197">B1</command>
+<command execution_time="93">imshow(blackP)</command>
+<command batch="36">plot(sampleProfile(:,:,1));</command>
+<command batch="36">hold on</command>
+<command batch="36" execution_time="54">plot(checkerboardProfile(:,:,1));</command>
+<command error="true" execution_time="24166" repeat="2">W05</command>
+<command execution_time="372">imshow(Irotate)</command>
+<command execution_time="23553">W05</command>
+<command batch="37">plot(sampleProfile(:,:,1));</command>
+<command batch="37">hold on</command>
+<command batch="37" execution_time="52">plot(checkerboardProfile(:,:,1));</command>
+<command execution_time="22240">B05</command>
+<command batch="38">plot(sampleProfile(:,:,1));</command>
+<command batch="38">hold on</command>
+<command batch="38" execution_time="47">plot(checkerboardProfile(:,:,1));</command>
+<command execution_time="8">clear</command>
+<command execution_time="26">load('W05_checkerboard.mat')</command>
+<command execution_time="30" repeat="2">load('/home/origamidance/Research/Measurement/MFP/checkerboard/backup/W05_checkerboard.mat')</command>
+<command execution_time="27">load('W05_checkerboard.mat')</command>
+<command execution_time="7">clear</command>
+<command execution_time="28">load('W05_checkerboard.mat')</command>
+<command execution_time="28">load('/home/origamidance/Research/Measurement/MFP/checkerboard/backup/W05_checkerboard.mat')</command>
+<command batch="39">plot(new(:,:,1));</command>
+<command batch="39">hold on</command>
+<command batch="39" execution_time="69">plot(old(:,:,1));</command>
+<command execution_time="32">load('/home/origamidance/Research/Measurement/MFP/checkerboard/backup/W05_sample.mat')</command>
+<command execution_time="29">load('W05_sample.mat')</command>
+<command batch="40">plot(new(:,:,1));</command>
+<command batch="40">hold on</command>
+<command batch="40" execution_time="50">plot(old(:,:,1));</command>
+<command execution_time="10">plot(new_sample(:,:,1));</command>
+<command execution_time="7">plot(old_sample(:,:,1));</command>
+</session>
 </history>

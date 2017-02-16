@@ -1,4 +1,4 @@
-<MathWorks type="Path Cache File" version="1.1" date="Thu Jan 12 13:34:32 2017">
+<MathWorks type="Path Cache File" version="1.1" date="Mon Feb 13 14:31:39 2017">
  <D name="matlab/elmat">
   <D name="matlab/elmat/+matlab">
    <D name="matlab/elmat/+matlab/+internal">
@@ -191,7 +191,7 @@
   <F name="istriu.m"/>
   <F name="ldl.m"/>
   <F name="linsolve.m"/>
-  <F name="logm.m"/>
+  <N name="logm.m"/>
   <F name="lscov.m"/>
   <F name="ltitr.m"/>
   <F name="lu.m"/>
@@ -1105,7 +1105,7 @@
   <N name="isreal.m"/>
   <N name="log.m"/>
   <N name="log10.m"/>
-  <F name="log1p.m"/>
+  <N name="log1p.m"/>
   <N name="log2.m"/>
   <N name="mod.m"/>
   <F name="nextpow2.m"/>
@@ -1113,7 +1113,7 @@
   <N name="pow2.m"/>
   <F name="rad2deg.m"/>
   <N name="real.m"/>
-  <F name="reallog.m"/>
+  <N name="reallog.m"/>
   <F name="realpow.m"/>
   <F name="realsqrt.m"/>
   <N name="rem.m"/>
@@ -1731,7 +1731,7 @@
        <F name="localConstructor.m"/>
        <F name="localMethod.m"/>
        <F name="method.m"/>
-       <F name="package.m"/>
+       <C name="package.m"/>
        <C name="packagedFunction.m"/>
        <F name="packagedItem.m"/>
        <C name="packagedUnknown.m"/>
@@ -1820,7 +1820,7 @@
       <D name="matlab/general/+matlab/+internal/+language/+introspective/private">
        <N name="getCallerImports.m"/>
       </D>
-      <F name="MCOSMetaResolver.m"/>
+      <C name="MCOSMetaResolver.m"/>
       <C name="atomicHelpPart.m"/>
       <N name="callHelpFunction.m"/>
       <N name="casedStrCmp.m"/>
@@ -2654,7 +2654,7 @@
   <N name="hgrc.m"/>
   <N name="initprefs.m"/>
   <F name="librarypath.txt"/>
-  <F name="license.m"/>
+  <N name="license.m"/>
   <F name="linkerr.html"/>
   <N name="matlabrc.m"/>
   <F name="mime.types"/>
@@ -11249,7 +11249,7 @@
   <F name="labSendReceive.m"/>
   <F name="labindex.m"/>
   <F name="mpiFinalize.m"/>
-  <F name="mpiInit.m"/>
+  <N name="mpiInit.m"/>
   <F name="mpiInitialized.m"/>
   <F name="mpiLibConf.m"/>
   <F name="mpiParallelSessionEnding.m"/>
@@ -11360,7 +11360,7 @@
    <F name="char.m"/>
    <F name="chol.m"/>
    <F name="classUnderlying.m"/>
-   <F name="codistributed.m"/>
+   <C name="codistributed.m"/>
    <F name="colon.m"/>
    <F name="colonize.m"/>
    <F name="complex.m"/>
@@ -11785,7 +11785,7 @@
    <F name="zeros.m"/>
   </D>
   <F name="Contents.m"/>
-  <F name="codistributor.m"/>
+  <N name="codistributor.m"/>
   <F name="gather.m"/>
   <F name="gcat.m"/>
   <F name="gop.m"/>
@@ -11816,7 +11816,7 @@
    <F name="AutoDeref.m"/>
    <F name="AutoTransfer.m"/>
    <F name="BuildOption.m"/>
-   <F name="CodistParser.m"/>
+   <C name="CodistParser.m"/>
    <F name="CodistributedDescriptor.m"/>
    <F name="CommSplitter.m"/>
    <F name="DistributedRegionIterator.m"/>
@@ -18588,9 +18588,9 @@
       </D>
       <F name="getImageSize.m"/>
       <F name="imjpgbaselineinfo.m"/>
-      <F name="imjpgbaselineinfo.p"/>
+      <N name="imjpgbaselineinfo.p"/>
       <F name="imjpginfo.m"/>
-      <F name="imjpginfo.p"/>
+      <N name="imjpginfo.p"/>
       <N name="imtifinfo.m"/>
       <N name="tifftagsprocess.m"/>
       <F name="tifftagsread.mexa64"/>
