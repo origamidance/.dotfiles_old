@@ -27,7 +27,7 @@ values."
    ;; If non-nil layers with lazy install support are lazy installed.
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
-   dotspacemacs-configuration-layer-path '("~/.spacemacs.d/layers")
+   ;;dotspacemacs-configuration-layer-path '("~/.spacemacs.d/layers")
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
@@ -65,11 +65,11 @@ values."
              colors-enable-nyan-cat-progress-bar t
              )
      ycmd
-     (wakatime :variables
-               wakatime-api-key  "1dc9220a-aa34-454d-b232-25c0ac8814db"
-               ;; use the actual wakatime path
-               wakatime-cli-path "/usr/bin/wakatime"
-               global-wakatime-mode t)
+     ;; (wakatime :variables
+     ;;           wakatime-api-key  "1dc9220a-aa34-454d-b232-25c0ac8814db"
+     ;;           ;; use the actual wakatime path
+     ;;           wakatime-cli-path "/usr/bin/wakatime"
+     ;;           global-wakatime-mode t)
      extra-langs
      )
    ;; List of additional packages that will be installed without being
@@ -339,12 +339,12 @@ you should place your code here."
     "i"  'helm-semantic
     "gr" 'helm-gtags-dwim
     )
-  ;; ;; Make evil-mode up/down operate in screen lines instead of logical lines
-  ;; (define-key evil-motion-state-map "j" 'evil-next-visual-line)
-  ;; (define-key evil-motion-state-map "k" 'evil-previous-visual-line)
-  ;; ;; Also in visual mode
-  ;; (define-key evil-visual-state-map "j" 'evil-next-visual-line)
-  ;; (define-key evil-visual-state-map "k" 'evil-previous-visual-line)
+  ;; Make evil-mode up/down operate in screen lines instead of logical lines
+  (define-key evil-motion-state-map "j" 'evil-next-visual-line)
+  (define-key evil-motion-state-map "k" 'evil-previous-visual-line)
+  ;; Also in visual mode
+  (define-key evil-visual-state-map "j" 'evil-next-visual-line)
+  (define-key evil-visual-state-map "k" 'evil-previous-visual-line)
   ;; This snippet allows you to run clang-format before saving
   ;; given the current file as the correct filetype.
   ;; This relies on the c-c++ layer being enabled.
@@ -453,7 +453,7 @@ Added: %U
  '(show-paren-mode t)
  '(tab-always-indent nil)
  '(tool-bar-mode nil)
- '(wakatime-cli-path "/home/origamidance/wakatime")
+ '(wakatime-cli-path "/usr/include/sys/cdefs.h")
  '(wakatime-python-bin "/usr/bin/python")
  '(wolfram-alpha-app-id "2WP84Y-PWU95PVX2P")
  '(ycmd-seed-identifiers-with-keywords t)
@@ -466,6 +466,6 @@ Added: %U
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight normal :height 143 :width normal))))
+ '(default ((t (:family "Source Code Pro" :foundry "nil" :slant normal :weight normal :height 190 :width normal))))
  '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
  '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
