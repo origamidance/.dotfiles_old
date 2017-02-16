@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/origamidance/SpaceClion.git
+	branch = master
+	commit = a7e4e66d21fd0140ae62fde3546877ac62a28a6f
+	parent = 9eb3300e805df2605b0363d6a412b6fef0a54458
+	cmdver = 0.3.0
