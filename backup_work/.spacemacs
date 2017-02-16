@@ -31,8 +31,10 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     rust
      yaml
+     html
+     ;; rust
+     ;; yaml
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -43,7 +45,7 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
-     html
+     ;; html
      git
      markdown
      (org :variables
@@ -53,10 +55,10 @@ values."
             shell-default-position 'bottom)
      spell-checking
      ;; syntax-checking
-     latex
+     (latex :variables latex-enable-auto-fill nil)
      gtags
      (c-c++ :variables
-            c-c++-enable-clang-support t
+            ;; c-c++-enable-clang-support t
             c-c++-default-mode-for-headers 'c++-mode
             company-show-numbers t)
      ;; version-control
@@ -71,6 +73,7 @@ values."
      ;;           wakatime-cli-path "/usr/bin/wakatime"
      ;;           global-wakatime-mode t)
      extra-langs
+     ;; dash
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -323,6 +326,7 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (evil-leader/set-key "DEL" 'delete-window)
+  (evil-leader/set-key "RET" 'evil-avy-goto-word-or-subword-1)
   (spacemacs/set-leader-keys-for-major-mode 'c-mode
     "ga" 'projectile-find-other-file
     "gA" 'projectile-find-other-file-other-window
@@ -345,19 +349,19 @@ you should place your code here."
   ;; Also in visual mode
   (define-key evil-visual-state-map "j" 'evil-next-visual-line)
   (define-key evil-visual-state-map "k" 'evil-previous-visual-line)
-  ;; This snippet allows you to run clang-format before saving
-  ;; given the current file as the correct filetype.
-  ;; This relies on the c-c++ layer being enabled.
-  (defun clang-format-for-filetype ()
-    "Run clang-format if the current file has a file extensions
-in the filetypes list."
-    (let ((filetypes '("c" "cpp" "h" "hpp")))
-      (when (member (file-name-extension (buffer-file-name)) filetypes)
-        (clang-format-buffer))))
+;;   ;; This snippet allows you to run clang-format before saving
+;;   ;; given the current file as the correct filetype.
+;;   ;; This relies on the c-c++ layer being enabled.
+;;   (defun clang-format-for-filetype ()
+;;     "Run clang-format if the current file has a file extensions
+;; in the filetypes list."
+;;     (let ((filetypes '("c" "cpp" "h" "hpp")))
+;;       (when (member (file-name-extension (buffer-file-name)) filetypes)
+;;         (clang-format-buffer))))
 
-  ;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html for
-  ;; what this line means
-  (add-hook 'before-save-hook 'clang-format-for-filetype)
+;;   ;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html for
+;;   ;; what this line means
+;;   (add-hook 'before-save-hook 'clang-format-for-filetype)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -449,17 +453,19 @@ Added: %U
       ("HOLD")))))
  '(package-selected-packages
    (quote
-    (toml-mode racer cargo rust-mode wolfram wolfram-mode thrift stan-mode scad-mode qml-mode matlab-mode julia-mode arduino-mode wgrep smex ivy-hydra flyspell-correct-ivy counsel-projectile counsel swiper ivy pcache powerline spinner hydra parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish f s bind-map bind-key packed dash helm avy helm-core async popup package-build yaml-mode auctex-latexmk company-quickhelp wakatime-mode xterm-color web-mode tagedit stickyfunc-enhance srefactor smeargle slim-mode shell-pop scss-mode sass-mode rainbow-mode rainbow-identifiers pug-mode ox-gfm orgit org-projectile org-present org org-pomodoro alert log4e gntp org-download mwim multi-term mmm-mode markdown-toc markdown-mode magit-gitflow less-css-mode htmlize helm-gtags helm-gitignore helm-css-scss helm-company helm-c-yasnippet haml-mode gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md ggtags flyspell-correct-helm flyspell-correct flycheck-ycmd flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help emmet-mode disaster company-ycmd ycmd request-deferred deferred company-web web-completion-data company-statistics company-c-headers company-auctex company color-identifiers-mode cmake-mode clang-format auto-yasnippet yasnippet auto-dictionary auctex ac-ispell auto-complete ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
+    (zeal-at-point helm-dash toml-mode racer cargo rust-mode wolfram wolfram-mode thrift stan-mode scad-mode qml-mode matlab-mode julia-mode arduino-mode wgrep smex ivy-hydra flyspell-correct-ivy counsel-projectile counsel swiper ivy pcache powerline spinner hydra parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish f s bind-map bind-key packed dash helm avy helm-core async popup package-build yaml-mode auctex-latexmk company-quickhelp wakatime-mode xterm-color web-mode tagedit stickyfunc-enhance srefactor smeargle slim-mode shell-pop scss-mode sass-mode rainbow-mode rainbow-identifiers pug-mode ox-gfm orgit org-projectile org-present org org-pomodoro alert log4e gntp org-download mwim multi-term mmm-mode markdown-toc markdown-mode magit-gitflow less-css-mode htmlize helm-gtags helm-gitignore helm-css-scss helm-company helm-c-yasnippet haml-mode gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md ggtags flyspell-correct-helm flyspell-correct flycheck-ycmd flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help emmet-mode disaster company-ycmd ycmd request-deferred deferred company-web web-completion-data company-statistics company-c-headers company-auctex company color-identifiers-mode cmake-mode clang-format auto-yasnippet yasnippet auto-dictionary auctex ac-ispell auto-complete ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
  '(show-paren-mode t)
  '(tab-always-indent nil)
  '(tool-bar-mode nil)
  '(wakatime-cli-path "/usr/include/sys/cdefs.h")
  '(wakatime-python-bin "/usr/bin/python")
  '(wolfram-alpha-app-id "2WP84Y-PWU95PVX2P")
+ '(ycmd-force-semantic-completion nil)
  '(ycmd-seed-identifiers-with-keywords t)
  '(ycmd-server-command
    (quote
-    ("python" "/home/origamidance/dependencies/ycmd/ycmd"))))
+    ("python" "/home/origamidance/dependencies/ycmd/ycmd")))
+ '(ycmd-tag-files (quote auto)))
  
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

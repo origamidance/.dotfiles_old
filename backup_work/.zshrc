@@ -16,6 +16,3 @@ echo "zsh done"
 
 alias spcmacs="LC_CTYPE=zh_CN.UTF-8 emacs"
 
-export TAICHI_ROOT_DIR=~/Playground/
-export TAICHI_NUM_THREADS=4 # or any other number
-export PYTHONPATH=$TAICHI_ROOT_DIR/taichi/python/:$PYTHONPATH
