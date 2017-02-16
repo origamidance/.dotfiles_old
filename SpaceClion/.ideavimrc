@@ -1,0 +1,57 @@
+set ignorecase
+set history
+set hlsearch
+set incsearch
+set matchpairs
+" set nrformats
+" set relativenumber
+set smartcase
+set visualbell
+
+" set surround
+
+" set clipboard=unnamedplus,unnamed
+
+let mapleader = " "
+nmap <leader>a :action $SelectAll<CR>
+nmap <leader><Space> :action GotoAction<CR>
+nmap <C-Enter> :action AceAction<CR>
+
+" Insert mode shortcut
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-d> <Delete>
+
+" Window operation
+nnoremap <Leader>ww <C-W>w
+nnoremap <Leader>wd <C-W>c
+nnoremap <Leader>wj <C-W>j
+nnoremap <Leader>wk <C-W>k
+nnoremap <Leader>wh <C-W>h
+nnoremap <Leader>wl <C-W>l
+nnoremap <Leader>ws <C-W>s
+nnoremap <Leader>w- <C-W>s
+nnoremap <Leader>wv <C-W>v
+nnoremap <Leader>w/ <C-W>v
+
+" built in search looks better
+nnoremap / :action Find<CR>
+" but preserve ideavim search
+nnoremap <Leader>/ /
+
+nnoremap <Leader>;; :action CommentByLineComment<CR>
+
+nnoremap <Leader>ga :action GotoAction<CR>
+nnoremap <Leader>gc :action GotoClass<CR>
+nnoremap <Leader>gd :action GotoDeclaration<CR>
+nnoremap <Leader>gi :action GotoImplementation<CR>
+nnoremap <Leader>gs :action GotoSuperMethod<CR>
+nnoremap <Leader>gt :action GotoTest<CR>
+nnoremap <Leader>vs :source ~/.ideavimrc<CR>
+
+" search everywhere
+nnoremap <Leader>ff :action SearchEverywhere<CR>
