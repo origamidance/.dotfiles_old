@@ -51,7 +51,12 @@ nnoremap <Leader>gd :action GotoDeclaration<CR>
 nnoremap <Leader>gi :action GotoImplementation<CR>
 nnoremap <Leader>gs :action GotoSuperMethod<CR>
 nnoremap <Leader>gt :action GotoTest<CR>
+nnoremap <Leader>ff :action GotoFile<CR>
 nnoremap <Leader>vs :source ~/.ideavimrc<CR>
 
 " search everywhere
-nnoremap <Leader>ff :action SearchEverywhere<CR>
+nnoremap <Leader>ss :action SearchEverywhere<CR>
+
+" tabs manipulation
+nnoremap <leader>q  :action CloseActiveTab<cr>
+nnoremap <leader>q  :action CloseContent<cr>

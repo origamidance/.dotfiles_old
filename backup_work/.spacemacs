@@ -32,6 +32,7 @@ values."
    dotspacemacs-configuration-layers
    '(
      vimscript
+     vimscript
      yaml
      html
      ;; rust
