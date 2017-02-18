@@ -269,5 +269,8 @@ bindsym Print exec xfce4-screenshooter
 #double function keys
 exec --no-startup-id xcape -e 'Control_L=Escape'
 exec --no-startup-id xcape -e 'Super_L=space'
+exec --no-startup-id xmodmap ~/.Xmodmap
+exec --no-startup-id xcape -e 'Mode_switch=Tab'
+
 ## chrome
 #exec --no-startup-id i3-msg 'workspace 1 : $WS1; exec google-chrome-stable'
