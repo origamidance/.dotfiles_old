@@ -464,9 +464,7 @@ Added: %U
  '(wolfram-alpha-app-id "2WP84Y-PWU95PVX2P")
  '(ycmd-force-semantic-completion nil)
  '(ycmd-seed-identifiers-with-keywords t)
- '(ycmd-server-command
-   (quote
-    ("python" "/home/origamidance/dependencies/ycmd/ycmd")))
+ '(ycmd-server-command (quote ("python" "/Users/ranzhang/dependencies/ycmd/ycmd")))
  '(ycmd-tag-files (quote auto)))
  
 (custom-set-faces

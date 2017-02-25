@@ -76,4 +76,5 @@ noremap <Leader><tab> :action VimFilePrevious<CR>
 
 " File Structure
 noremap <Leader>fs :action FileStructurePopup<CR>
+" noremap <Leader>fs :action ActivateStructureToolWindow<CR>
 
