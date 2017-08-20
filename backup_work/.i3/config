@@ -261,6 +261,7 @@ bindsym Mod1 + space exec tdrop -a -m -w 100% -x 3 -y 23 xfce4-terminal
 ## rofi
 # bindsym Control + space exec rofi -run-command "zsh -c -i '{cmd}'" -combi-modi window,drun,run -show combi
 bindsym Control + space exec --no-startup-id ~/.customized_scripts/rofi.sh
+bindsym $mod + Tab exec rofi -show window
 #key bindings
 #package manager
 bindsym $mod+u exec pamac-manager

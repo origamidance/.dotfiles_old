@@ -389,11 +389,11 @@ you should place your code here."
  '(clean-aindent-mode t)
  '(column-number-mode t)
  '(company-auto-complete-chars (quote (32 41 46)))
- '(company-idle-delay 0.1)
+ '(company-idle-delay 0.1 t)
  '(company-irony-ignore-case t)
- '(company-minimum-prefix-length 1)
+ '(company-minimum-prefix-length 1 t)
  '(company-occurrence-weight-function (quote company-occurrence-prefer-closest-above))
- '(company-require-match (quote (quote company-explicit-action-p)))
+ '(company-require-match (quote (quote company-explicit-action-p)) t)
  '(company-transformers
    (quote
     (company-sort-prefer-same-case-prefix company-sort-by-backend-importance company-sort-by-occurrence spacemacs//company-transformer-cancel)))
@@ -455,7 +455,7 @@ Added: %U
       ("HOLD")))))
  '(package-selected-packages
    (quote
-    (vimrc-mode dactyl-mode zeal-at-point helm-dash toml-mode racer cargo rust-mode wolfram wolfram-mode thrift stan-mode scad-mode qml-mode matlab-mode julia-mode arduino-mode wgrep smex ivy-hydra flyspell-correct-ivy counsel-projectile counsel swiper ivy pcache powerline spinner hydra parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish f s bind-map bind-key packed dash helm avy helm-core async popup package-build yaml-mode auctex-latexmk company-quickhelp wakatime-mode xterm-color web-mode tagedit stickyfunc-enhance srefactor smeargle slim-mode shell-pop scss-mode sass-mode rainbow-mode rainbow-identifiers pug-mode ox-gfm orgit org-projectile org-present org org-pomodoro alert log4e gntp org-download mwim multi-term mmm-mode markdown-toc markdown-mode magit-gitflow less-css-mode htmlize helm-gtags helm-gitignore helm-css-scss helm-company helm-c-yasnippet haml-mode gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md ggtags flyspell-correct-helm flyspell-correct flycheck-ycmd flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help emmet-mode disaster company-ycmd ycmd request-deferred deferred company-web web-completion-data company-statistics company-c-headers company-auctex company color-identifiers-mode cmake-mode clang-format auto-yasnippet yasnippet auto-dictionary auctex ac-ispell auto-complete ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
+    (winum unfill fuzzy vimrc-mode dactyl-mode zeal-at-point helm-dash toml-mode racer cargo rust-mode wolfram wolfram-mode thrift stan-mode scad-mode qml-mode matlab-mode julia-mode arduino-mode wgrep smex ivy-hydra flyspell-correct-ivy counsel-projectile counsel swiper ivy pcache powerline spinner hydra parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish f s bind-map bind-key packed dash helm avy helm-core async popup package-build yaml-mode auctex-latexmk company-quickhelp wakatime-mode xterm-color web-mode tagedit stickyfunc-enhance srefactor smeargle slim-mode shell-pop scss-mode sass-mode rainbow-mode rainbow-identifiers pug-mode ox-gfm orgit org-projectile org-present org org-pomodoro alert log4e gntp org-download mwim multi-term mmm-mode markdown-toc markdown-mode magit-gitflow less-css-mode htmlize helm-gtags helm-gitignore helm-css-scss helm-company helm-c-yasnippet haml-mode gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md ggtags flyspell-correct-helm flyspell-correct flycheck-ycmd flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help emmet-mode disaster company-ycmd ycmd request-deferred deferred company-web web-completion-data company-statistics company-c-headers company-auctex company color-identifiers-mode cmake-mode clang-format auto-yasnippet yasnippet auto-dictionary auctex ac-ispell auto-complete ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
  '(show-paren-mode t)
  '(tab-always-indent nil)
  '(tool-bar-mode nil)
@@ -464,7 +464,9 @@ Added: %U
  '(wolfram-alpha-app-id "2WP84Y-PWU95PVX2P")
  '(ycmd-force-semantic-completion nil)
  '(ycmd-seed-identifiers-with-keywords t)
- '(ycmd-server-command (quote ("python" "/Users/ranzhang/dependencies/ycmd/ycmd")))
+ '(ycmd-server-command
+   (quote
+    ("python" "/home/origamidance/dependencies/ycmd/ycmd")))
  '(ycmd-tag-files (quote auto)))
  
 (custom-set-faces
