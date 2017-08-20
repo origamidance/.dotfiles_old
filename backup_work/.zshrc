@@ -16,3 +16,4 @@ echo "zsh done"
 
 alias spcmacs="LC_CTYPE=zh_CN.UTF-8 emacs"
 alias open="xdg-open"
+eval $(thefuck --alias)

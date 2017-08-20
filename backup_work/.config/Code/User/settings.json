@@ -14,12 +14,10 @@
                 "<space>"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showCommands",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.showCommands",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -27,12 +25,10 @@
                 "<tab>"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.nextEditor",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.nextEditor",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -40,12 +36,10 @@
                 "1"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusFirstEditorGroup",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.focusFirstEditorGroup",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -53,12 +47,10 @@
                 "2"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusSecondEditorGroup",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.focusSecondEditorGroup",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -66,12 +58,10 @@
                 "3"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusThirdEditorGroup",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.focusThirdEditorGroup",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -80,12 +70,10 @@
                 "b"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.quickOpen",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.quickOpen",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -94,12 +82,10 @@
                 "d"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeActiveEditor",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.closeActiveEditor",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -108,12 +94,10 @@
                 "n"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.nextEditor",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.nextEditor",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -122,12 +106,10 @@
                 "p"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.previousEditor",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.previousEditor",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -136,12 +118,10 @@
                 "f"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.openFile",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.files.openFile",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -150,12 +130,10 @@
                 "r"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.openRecent",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.openRecent",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -164,12 +142,10 @@
                 "s"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.files.save",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -178,12 +154,10 @@
                 "t"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.view.explorer",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.view.explorer",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -192,12 +166,10 @@
                 "s"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.view.scm",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.view.scm",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -206,12 +178,10 @@
                 "d"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeFolder",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.closeFolder",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -220,12 +190,10 @@
                 "f"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.quickOpen",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.quickOpen",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -234,12 +202,10 @@
                 "l"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.openFolder",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.files.openFolder",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -248,12 +214,10 @@
                 "p"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.openRecent",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.openRecent",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -262,12 +226,10 @@
                 "f"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeWindow",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.closeWindow",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -276,12 +238,10 @@
                 "q"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeWindow",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.closeWindow",
+                "args": []
+            }]
         },
         {
             "before": [
@@ -290,12 +250,10 @@
                 "w"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusNextGroup",
-                    "args": []
-                }
-            ]
+            "commands": [{
+                "command": "workbench.action.focusNextGroup",
+                "args": []
+            }]
         },
         {
             "before": [

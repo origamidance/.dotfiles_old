@@ -243,9 +243,9 @@ exec_always feh --bg-scale ~/.dotfiles/images/origamidance.jpg
 # bindsym $mod+period move workspace to output down
 
 set $M_r DVI-I-1
-set $M_l DP-5
+set $M_l DP-2
 
-workspace "1 : $WS1" output $M_r
+workspace 1 output $M_l
 workspace 2 output $M_l
 workspace 8 output $M_r
 workspace 9 output $M_r
@@ -268,9 +268,9 @@ bindsym $mod+u exec pamac-manager
 #screen shot
 bindsym Print exec xfce4-screenshooter
 #double function keys
+exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id xcape -e 'Control_L=Escape'
 exec --no-startup-id xcape -e 'Super_L=space'
-exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id xcape -e 'Mode_switch=Tab'
 
 ## chrome

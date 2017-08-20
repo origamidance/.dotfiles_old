@@ -31,7 +31,13 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     vimscript
+     javascript
+     rust
+     php
+     javascript
+     ;; python
+     ;; vimscript
+     chinese
      vimscript
      yaml
      html
@@ -49,7 +55,7 @@ values."
      emacs-lisp
      ;; html
      git
-     markdown
+     (markdown :variables markdown-live-preview-engine 'vmd)
      (org :variables
           org-enable-github-support t)
      (shell :variables
@@ -401,6 +407,7 @@ you should place your code here."
  '(company-ycmd-request-sync-timeout 0.5)
  '(evil-want-Y-yank-to-eol nil)
  '(global-wakatime-mode t)
+ '(markdown-enable-math t)
  '(org-agenda-files (quote ("~/GTD/work.org" "~/GTD/ideas.org")))
  '(org-capture-templates
    (quote
@@ -455,7 +462,7 @@ Added: %U
       ("HOLD")))))
  '(package-selected-packages
    (quote
-    (winum unfill fuzzy vimrc-mode dactyl-mode zeal-at-point helm-dash toml-mode racer cargo rust-mode wolfram wolfram-mode thrift stan-mode scad-mode qml-mode matlab-mode julia-mode arduino-mode wgrep smex ivy-hydra flyspell-correct-ivy counsel-projectile counsel swiper ivy pcache powerline spinner hydra parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish f s bind-map bind-key packed dash helm avy helm-core async popup package-build yaml-mode auctex-latexmk company-quickhelp wakatime-mode xterm-color web-mode tagedit stickyfunc-enhance srefactor smeargle slim-mode shell-pop scss-mode sass-mode rainbow-mode rainbow-identifiers pug-mode ox-gfm orgit org-projectile org-present org org-pomodoro alert log4e gntp org-download mwim multi-term mmm-mode markdown-toc markdown-mode magit-gitflow less-css-mode htmlize helm-gtags helm-gitignore helm-css-scss helm-company helm-c-yasnippet haml-mode gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md ggtags flyspell-correct-helm flyspell-correct flycheck-ycmd flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help emmet-mode disaster company-ycmd ycmd request-deferred deferred company-web web-completion-data company-statistics company-c-headers company-auctex company color-identifiers-mode cmake-mode clang-format auto-yasnippet yasnippet auto-dictionary auctex ac-ispell auto-complete ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
+    (winum unfill fuzzy phpunit phpcbf php-extras php-auto-yasnippets drupal-mode php-mode web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc company-tern dash-functional tern coffee-mode pangu-spacing find-by-pinyin-dired chinese-pyim chinese-pyim-basedict ace-pinyin pinyinlib ace-jump-mode vmd-mode yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic vimrc-mode dactyl-mode zeal-at-point helm-dash toml-mode racer cargo rust-mode wolfram wolfram-mode thrift stan-mode scad-mode qml-mode matlab-mode julia-mode arduino-mode wgrep smex ivy-hydra flyspell-correct-ivy counsel-projectile counsel swiper ivy pcache powerline spinner hydra parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish f s bind-map bind-key packed dash helm avy helm-core async popup package-build yaml-mode auctex-latexmk company-quickhelp wakatime-mode xterm-color web-mode tagedit stickyfunc-enhance srefactor smeargle slim-mode shell-pop scss-mode sass-mode rainbow-mode rainbow-identifiers pug-mode ox-gfm orgit org-projectile org-present org org-pomodoro alert log4e gntp org-download mwim multi-term mmm-mode markdown-toc markdown-mode magit-gitflow less-css-mode htmlize helm-gtags helm-gitignore helm-css-scss helm-company helm-c-yasnippet haml-mode gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md ggtags flyspell-correct-helm flyspell-correct flycheck-ycmd flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help emmet-mode disaster company-ycmd ycmd request-deferred deferred company-web web-completion-data company-statistics company-c-headers company-auctex company color-identifiers-mode cmake-mode clang-format auto-yasnippet yasnippet auto-dictionary auctex ac-ispell auto-complete ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
  '(show-paren-mode t)
  '(tab-always-indent nil)
  '(tool-bar-mode nil)
