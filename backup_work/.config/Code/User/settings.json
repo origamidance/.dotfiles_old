@@ -268,7 +268,7 @@
                     "args": []
                 }
             ]
-        }
+        },
         {
             "before": [
                 "%"
@@ -280,9 +280,24 @@
                     "args": []
                 }
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ";",
+                ";"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.addCommentLine",
+                    "args": []
+                }
+            ]
         }
     ],
     "C_Cpp.intelliSenseEngine": "Default",
     "workbench.colorTheme": "Spacemacs - dark",
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.showTabs": false
 }
