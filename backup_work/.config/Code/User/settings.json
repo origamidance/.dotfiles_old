@@ -260,12 +260,28 @@
                 "command": "workbench.action.focusPreviousGroup",
                 "args": []
             }]
+        },
+        {
+            "before": [
+                "%"
+            ],
+            "after": [],
+            "commands": [{
+                "command": "editor.emmet.action.matchTag",
+                "args": []
+            }]
         }
     ],
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
     "C_Cpp.intelliSenseEngine": "Default",
     "cmake.initialBuildType": "Release",
     "C_Cpp.intelliSenseEngineFallback": "Disabled",
     "workbench.colorTheme": "Spacemacs - dark",
     "editor.fontSize": 17,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "workbench.editor.showTabs": true
 }
