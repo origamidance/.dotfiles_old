@@ -2,7 +2,13 @@
 {
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.leader": " ",
-    "vim.otherModesKeyBindingsNonRecursive": [{
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
             "before": [
                 "<leader>",
                 "<space>"
@@ -256,20 +262,38 @@
                 "W"
             ],
             "after": [],
-            "commands": [{
-                "command": "workbench.action.focusPreviousGroup",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "workbench.action.focusPreviousGroup",
+                    "args": []
+                }
+            ]
         },
         {
             "before": [
                 "%"
             ],
             "after": [],
-            "commands": [{
-                "command": "editor.emmet.action.matchTag",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "editor.emmet.action.matchTag",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ";",
+                ";"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.addCommentLine",
+                    "args": []
+                }
+            ]
         }
     ],
     "vim.easymotion": true,
@@ -278,10 +302,9 @@
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "C_Cpp.intelliSenseEngine": "Default",
-    "cmake.initialBuildType": "Release",
-    "C_Cpp.intelliSenseEngineFallback": "Disabled",
     "workbench.colorTheme": "Spacemacs - dark",
     "editor.fontSize": 17,
     "files.autoSave": "afterDelay",
     "workbench.editor.showTabs": true
+    "workbench.iconTheme": "material-icon-theme",
 }
